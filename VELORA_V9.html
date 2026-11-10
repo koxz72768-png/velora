@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VELORA | إكسسوارات حريمي</title>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Tajawal:wght@400;500;700&family=Amiri:wght@400;700&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Tajawal:wght@400;500;700&family=Amiri:wght@400;700&display=swap"></noscript>
+<style>
+:root{color-scheme:dark;--bg:#0c0c0c;--surface:#161616;--ink:#f4ead3;--muted:#a89c80;--line:#2e2a20;--rose:#d4af37;--gold:#d4af37;--on-rose:#0c0c0c;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+
+
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Tajawal,Cairo,"Segoe UI",Tahoma,sans-serif;font-size:16px;line-height:1.7}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+button{font:inherit;cursor:pointer;border:0;color:inherit;background:none}
+:focus-visible{outline:2px solid var(--rose);outline-offset:2px}
+.logo{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;letter-spacing:.32em;direction:ltr;display:inline-block}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:10px 20px}
+header .logo{font-size:26px}
+nav a{margin-inline-start:20px;color:var(--muted);text-decoration:none;font-size:15px}
+nav a:hover{color:var(--ink)}
+.cartbtn{position:relative;padding:8px 16px;border:1px solid var(--ink);border-radius:999px;font-weight:500}
+.cartbtn b{background:var(--rose);color:var(--on-rose);border-radius:999px;padding:0 8px;margin-inline-start:6px;font-size:13px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;max-width:1120px;margin:0 auto;padding:56px 20px 40px;align-items:center}
+.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.25;margin:0 0 14px;font-weight:700}
+.hero p{color:var(--muted);max-width:44ch;margin:0 0 24px}
+.cta{background:var(--gold);color:#0c0c0c;padding:12px 28px;border-radius:999px;font-weight:700;text-decoration:none;display:inline-block}
+.ring{aspect-ratio:1;max-width:380px;margin-inline:auto;width:100%;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;position:relative;background:radial-gradient(circle at 35% 30%,color-mix(in srgb,var(--rose) 28%,transparent),transparent 62%)}
+.ring::before{content:"";position:absolute;inset:14%;border-radius:50%;border:1px solid var(--line)}
+.ring span{font-size:clamp(90px,16vw,150px)}
+.perks{max-width:1120px;margin:0 auto;padding:0 20px;display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+.perks span{border:1px solid var(--line);border-radius:999px;padding:4px 14px}
+main{max-width:1120px;margin:0 auto;padding:36px 20px 60px}
+.cats{display:flex;gap:8px;overflow-x:auto;padding-bottom:12px;margin-bottom:12px}
+.cats button{white-space:nowrap;padding:6px 18px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+.cats button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.pic{aspect-ratio:1;display:grid;place-items:center;font-size:72px}
+.card .info{padding:12px 14px 14px;display:flex;flex-direction:column;gap:2px;flex:1}
+.card h3{margin:0;font-size:17px;font-weight:500}
+.card small{color:var(--muted)}
+.price{font-weight:700;margin:4px 0 10px}
+.price s{color:var(--muted);font-weight:400;margin-inline-start:8px;font-size:14px}
+.add{margin-top:auto;border:1px solid var(--ink);border-radius:10px;padding:7px}
+.add:hover{background:var(--ink);color:var(--bg)}
+.tag{position:absolute;top:10px;inset-inline-start:10px;background:var(--rose);color:var(--on-rose);font-size:12px;padding:0 10px;border-radius:999px}
+.pw{position:relative}
+.dim{position:fixed;inset:0;background:rgba(20,8,26,.5);z-index:40;display:none}
+.dim.on{display:block}
+aside{position:fixed;top:0;bottom:0;inset-inline-end:0;visibility:hidden;width:min(400px,100%);background:var(--surface);z-index:50;transform:translateX(-100%);transition:transform .25s,visibility .25s;display:flex;flex-direction:column;padding:calc(16px + env(safe-area-inset-top,0px)) 18px calc(16px + env(safe-area-inset-bottom,0px))}
+aside.on{transform:none;visibility:visible}
+aside h2{margin:0 0 10px;font-size:20px;display:flex;justify-content:space-between}
+.items{flex:1;overflow:auto}
+.row{display:flex;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
+.row .t{width:48px;height:48px;border-radius:10px;display:grid;place-items:center;font-size:26px}
+.row .n{flex:1;font-size:15px;line-height:1.4}
+.qty{display:flex;align-items:center;gap:8px}
+.qty button{width:26px;height:26px;border:1px solid var(--line);border-radius:50%}
+.sum{padding-top:12px;font-size:15px}
+.sum div{display:flex;justify-content:space-between}
+.sum .tot{font-weight:700;font-size:18px;margin-top:4px}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+.go{width:100%;background:var(--rose);color:var(--on-rose);border-radius:12px;padding:12px;font-weight:700;margin-top:10px}
+.go:disabled{opacity:.4;cursor:not-allowed}
+form{display:grid;gap:10px}
+input,select,textarea{width:100%;font:inherit;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+label{font-size:14px;color:var(--muted)}
+.ok{text-align:center;padding:30px 0}
+.ok .big{font-size:54px}
+footer{border-top:1px solid var(--line);padding:30px 20px;text-align:center;color:var(--muted);font-size:14px}
+footer .logo{font-size:22px;color:var(--ink);display:block;margin-bottom:6px}
+.toast{position:fixed;bottom:calc(20px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:8px 20px;border-radius:999px;z-index:60;opacity:0;pointer-events:none;transition:opacity .2s}
+.toast.on{opacity:1}
+.tools{display:flex;gap:10px;margin-bottom:12px;flex-wrap:wrap}.tools input{flex:1;min-width:160px}.tools select{width:auto}
+.fav{position:absolute;top:8px;inset-inline-end:8px;width:34px;height:34px;border-radius:50%;background:rgba(12,12,12,.7);color:var(--gold);font-size:18px}
+.tag.oos{background:#444;color:#fff}.stars{color:var(--gold);font-size:14px}.lk{font:inherit;text-align:start;padding:0}.pic[data-p]{cursor:pointer}
+.add:disabled,.go:disabled{opacity:.4;cursor:not-allowed}
+.pm{position:fixed;z-index:55;inset:0;margin:auto;width:min(760px,94%);height:fit-content;max-height:90vh;overflow:auto;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;display:none}.pm.on{display:block}
+.pm .x{position:absolute;top:12px;inset-inline-start:14px}.pg{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.pic.big{border-radius:12px;font-size:110px}.th{display:flex;gap:8px;margin-top:8px}.th button{flex:1;aspect-ratio:1;border:1px solid var(--line);border-radius:10px;font-size:26px}
+.pm ul{padding-inline-start:18px;color:var(--muted)}.pm table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}.pm td,.pm th{border:1px solid var(--line);padding:4px 8px;text-align:center}
+.rv{border-top:1px solid var(--line);padding:8px 0}.rv p{margin:0;color:var(--muted)}
+details{border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin-bottom:8px;background:var(--surface)}summary{cursor:pointer;font-weight:500}details p{color:var(--muted);margin:8px 0 0}
+#faq{max-width:760px;margin:0 auto;padding:0 20px 50px}#faq h2{font-size:22px}
+.pm td input{padding:4px 6px;min-width:70px}.pm td input[type=checkbox]{width:auto;min-width:0}.pm form{align-content:start}.af{display:grid;grid-template-columns:2fr 1.4fr 1fr 1fr;gap:8px}.pm small{color:var(--muted)}
+.fwa{position:fixed;z-index:35;inset-inline-end:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#25d366;color:#0c0c0c;padding:10px 18px;border-radius:999px;font-weight:700;text-decoration:none}
+
+/* VELORA mobile + admin editor upgrade */
+.pm{width:min(96vw,980px);max-height:min(90vh,900px);overflow:auto;overscroll-behavior:contain}
+.pm table{min-width:720px}
+.pm .admin-savebar{position:sticky;bottom:0;z-index:4;margin:14px -2px -2px;padding:10px;background:color-mix(in srgb,var(--surface) 94%,transparent);backdrop-filter:blur(12px);border-top:1px solid var(--line);display:flex;gap:8px;flex-wrap:wrap}
+.editor-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+.editor-grid label{display:grid;gap:5px;color:var(--muted);font-size:13px}
+.editor-grid input,.editor-grid select{width:100%;box-sizing:border-box}
+.editor-grid .wide{grid-column:1/-1}
+.save-product{width:100%;font-size:16px;padding:12px 16px}
+@media(max-width:720px){
+  html{font-size:15px}
+  body{overflow-x:hidden}
+  header{padding:9px 12px;gap:8px}
+  header .logo{font-size:21px}
+  header>div{gap:5px!important}
+  .cartbtn{padding:7px 10px;font-size:12px}
+  .hero{padding:28px 14px 28px;gap:18px}
+  .hero h1{font-size:clamp(30px,10vw,44px)}
+  .hero p{font-size:14px}
+  .perks{padding:0 14px;gap:7px}
+  .perks span{font-size:11px;padding:5px 9px}
+  main{padding:26px 14px 45px}
+  .tools{grid-template-columns:1fr!important}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .card{border-radius:11px}
+  .card .info{padding:10px}
+  .card h3{font-size:14px}
+  .price{font-size:15px}
+  .add{padding:9px 8px;font-size:12px}
+  .pm{width:calc(100vw - 18px);max-width:none;max-height:92vh;border-radius:16px;padding:16px}
+  .pm table{min-width:0;width:100%;display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .pm th,.pm td{white-space:nowrap;padding:7px 5px}
+  .pm td input{min-width:72px;max-width:115px}
+  .af{grid-template-columns:1fr!important}
+  .af .go{grid-column:1!important}
+  .editor-grid{grid-template-columns:1fr}
+  .editor-grid .wide{grid-column:auto}
+  .editor-actions{display:grid!important;grid-template-columns:1fr;position:sticky;bottom:0;background:var(--surface);padding-top:10px}
+  .editor-actions button{width:100%}
+  .ed{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .fwa{right:auto;left:12px;inset-inline-end:auto;padding:9px 14px;font-size:13px}
+}
+@media(max-width:720px){.pg{grid-template-columns:1fr}.pic.big{font-size:80px}}
+.logo{color:var(--gold)}footer .logo{color:var(--gold)}
+.pic,.row .t{background:linear-gradient(145deg,#2b2413,#100d06)!important}
+.sz{margin-top:auto;margin-bottom:8px;padding:6px 10px}.sz+.add{margin-top:0}
+.wa{display:block;text-align:center;text-decoration:none}
+@media(max-width:720px){.hero{grid-template-columns:1fr;padding-top:30px}.ring{max-width:220px;order:-1}nav{display:none}.grid{grid-template-columns:repeat(2,1fr);gap:12px}.pic{font-size:56px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.pic{overflow:hidden}.pic img,.row .t img,.th img,.ed img{width:100%;height:100%;object-fit:cover;display:block}.th button{overflow:hidden;padding:0}.row .t{overflow:hidden}
+.ed{display:grid;grid-template-columns:repeat(auto-fill,minmax(88px,1fr));gap:8px;margin:8px 0}.ed .im{position:relative;aspect-ratio:1;border:1px solid var(--line);border-radius:10px;overflow:hidden}.ed .im button{position:absolute;top:4px;width:26px;height:26px;border-radius:50%;background:#000c;color:#fff;font-size:13px;padding:0;line-height:1}.ed .im .d{inset-inline-start:4px}.ed .im .f{inset-inline-end:4px}.mini{padding:6px 10px;font-size:13px;border:1px solid var(--line);border-radius:10px;white-space:nowrap}.ath{width:38px;height:38px;border-radius:8px;overflow:hidden;display:grid;place-items:center;background:#1a160b}.ath img{width:100%;height:100%;object-fit:cover}
+.gal{position:relative}.gn{position:absolute;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;background:#000a;color:#fff;font-size:22px;line-height:1;padding:0;display:grid;place-items:center}.gp{right:8px}.gx{left:8px}.th button.on{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)}
+/* خطوط العناوين */
+h1,h2,.hero h1,aside h2,.pm h2,#faq h2{font-family:Amiri,"Reem Kufi","Traditional Arabic",serif;font-weight:400;word-spacing:.12em}
+.hero h1{font-size:clamp(38px,6.4vw,68px);line-height:1.4}
+.card h3{font-weight:400}
+/* الأقسام: خط دهبي رفيع تحت القسم المختار */
+.cats{gap:2px}
+.cats button{background:none;border:0;border-radius:0;padding:8px 16px;color:var(--muted);position:relative;transition:color .3s}
+.cats button::after{content:"";position:absolute;inset-inline:16px;bottom:2px;height:1px;background:var(--gold);transform:scaleX(0);transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+.cats button:hover{color:var(--ink)}.cats button:hover::after{transform:scaleX(.35)}
+.cats button[aria-pressed="true"]{background:none;color:var(--ink);border-color:transparent}.cats button[aria-pressed="true"]::after{transform:scaleX(1)}
+/* حركة ناعمة */
+.em{display:block;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.pic img{transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+@media(hover:hover){.card:hover .pic img,.card:hover .pic .em{transform:scale(1.07)}}
+.rv .card{opacity:0;transform:translateY(22px);transition:opacity .7s ease var(--d,0ms),transform .7s cubic-bezier(.2,.7,.2,1) var(--d,0ms)}
+.rv .card.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv .card{opacity:1;transform:none;transition:none}.pic img,.em{transition:none}}
+
+/* ===== VELORA LUXURY REDESIGN v2 ===== */
+:root{--bg:#090909;--surface:#11100e;--surface2:#17140f;--ink:#f8f0df;--muted:#a89e8c;--line:rgba(212,175,55,.18);--gold:#d4af37;--gold2:#f0d98a}
+body{background:radial-gradient(circle at 85% 0%,rgba(212,175,55,.07),transparent 28%),var(--bg);overflow-x:hidden}
+header{height:72px;padding:10px clamp(16px,4vw,56px);background:rgba(9,9,9,.86);backdrop-filter:blur(18px);border-bottom:1px solid rgba(212,175,55,.12)}
+header .logo{font-size:31px;letter-spacing:.34em;text-shadow:0 0 28px rgba(212,175,55,.15)}
+nav a{font-size:14px;letter-spacing:.02em}
+.cartbtn{border-color:rgba(244,234,211,.28);background:rgba(255,255,255,.025);transition:.25s}
+.cartbtn:hover{border-color:var(--gold);transform:translateY(-1px)}
+.hero{max-width:none;min-height:680px;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0;position:relative;isolation:isolate;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,9,9,.97) 0%,rgba(9,9,9,.86) 38%,rgba(9,9,9,.18) 72%,rgba(9,9,9,.38) 100%),url('https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1800&q=88') center/cover;z-index:-2}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,9,9,.18),transparent 45%,rgba(9,9,9,.8));z-index:-1}
+.hero>div:first-child{padding:clamp(60px,9vw,120px) clamp(22px,7vw,110px);align-self:center;max-width:720px}
+.hero h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(54px,7vw,92px);line-height:1.05;letter-spacing:.01em;margin-bottom:22px;color:#fff7e7}
+.hero p{font-size:18px;line-height:2;color:#d0c6b5;max-width:520px}
+.hero .cta{background:var(--gold);padding:14px 32px;border-radius:0;letter-spacing:.05em;box-shadow:0 12px 40px rgba(212,175,55,.16);transition:.3s}
+.hero .cta:hover{background:var(--gold2);transform:translateY(-2px)}
+.ring{display:none}
+.perks{max-width:none;padding:0 clamp(18px,5vw,72px);height:74px;align-items:center;justify-content:center;gap:0;border-bottom:1px solid var(--line);background:#0c0b09}
+.perks span{border:0;border-radius:0;padding:0 34px;color:#c9bfae;position:relative}.perks span+span{border-inline-start:1px solid var(--line)}
+.section-head{max-width:1200px;margin:0 auto;padding:78px 22px 28px;display:flex;align-items:end;justify-content:space-between;gap:20px}
+.eyebrow{font-family:'Cormorant Garamond',Georgia,serif;color:var(--gold);font-size:15px;letter-spacing:.2em;text-transform:uppercase;direction:ltr}
+.section-head h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:46px;line-height:1;margin:8px 0 0;color:#f7efdf}
+.section-head p{color:var(--muted);margin:0;max-width:440px}
+.category-showcase{max-width:1200px;margin:0 auto;padding:0 22px 20px;display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.category-tile{min-height:190px;position:relative;overflow:hidden;border:1px solid rgba(212,175,55,.15);background:linear-gradient(145deg,#211b10,#0e0d0b);display:flex;align-items:end;padding:18px;text-decoration:none;color:#fff;isolation:isolate}
+.category-tile:before{content:"";position:absolute;inset:0;background:var(--tile-bg) center/cover;opacity:.48;transition:.5s;z-index:-2}.category-tile:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 25%,rgba(0,0,0,.88));z-index:-1}
+.category-tile:hover:before{transform:scale(1.06);opacity:.62}.category-tile b{font-size:18px;font-weight:500}.category-tile small{display:block;color:#c6bcaa;font-size:12px;margin-top:3px}
+.collection-banner{max-width:1200px;margin:65px auto 10px;min-height:430px;padding:55px;position:relative;overflow:hidden;display:flex;align-items:center;border:1px solid rgba(212,175,55,.14);background:linear-gradient(90deg,rgba(9,9,9,.96),rgba(9,9,9,.55)),url('https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=1800&q=88') center/cover}
+.collection-banner .eyebrow{margin-bottom:12px}.collection-banner h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(42px,6vw,72px);line-height:.95;margin:0 0 14px}.collection-banner p{color:#c9bfaf;max-width:420px}.outline-btn{display:inline-block;border:1px solid rgba(244,234,211,.45);padding:10px 24px;color:var(--ink);text-decoration:none;margin-top:10px;transition:.25s}.outline-btn:hover{border-color:var(--gold);color:var(--gold2)}
+main{max-width:1200px;padding:55px 22px 75px}.tools{border-bottom:1px solid var(--line);padding-bottom:16px}.tools input,.tools select{background:#0d0c0a;border-color:rgba(244,234,211,.16);border-radius:0}.grid{grid-template-columns:repeat(4,1fr);gap:16px}.card{background:#100f0d;border:1px solid rgba(244,234,211,.09);border-radius:0;transition:transform .3s,border-color .3s,box-shadow .3s}.card:hover{transform:translateY(-5px);border-color:rgba(212,175,55,.35);box-shadow:0 18px 45px rgba(0,0,0,.28)}.pic{aspect-ratio:4/5;background:linear-gradient(145deg,#2a2417,#0d0b08)!important}.card .info{padding:15px 15px 16px}.card h3{font-family:Tajawal,sans-serif;font-size:16px}.price{font-size:16px}.add{border-radius:0;border-color:rgba(244,234,211,.25)}
+.trust{max-width:1200px;margin:30px auto 0;padding:0 22px 70px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)}.trust-card{background:#0e0d0b;padding:28px 24px}.trust-card .icon{font-size:20px;color:var(--gold);margin-bottom:8px}.trust-card h3{font-size:16px;margin:0 0 4px}.trust-card p{margin:0;color:var(--muted);font-size:13px}
+.newsletter{margin-top:30px;padding:70px 22px;background:linear-gradient(120deg,#17130b,#0d0c0a);border-block:1px solid var(--line);text-align:center}.newsletter h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:48px;margin:0}.newsletter p{color:var(--muted);margin:5px auto 20px;max-width:520px}.newsletter form{max-width:560px;margin:auto;display:flex;gap:8px}.newsletter input{border-radius:0}.newsletter button{background:var(--gold);color:#0a0908;padding:10px 24px;font-weight:700}
+footer{padding:52px 22px;text-align:right;background:#070706}.footer-inner{max-width:1200px;margin:auto;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:35px}.footer-inner h4{margin:0 0 12px;color:var(--ink)}.footer-inner a{display:block;color:var(--muted);text-decoration:none;font-size:14px;margin:6px 0}.footer-inner a:hover{color:var(--gold)}footer .logo{font-size:30px;margin-bottom:10px}.footer-note{max-width:1200px;margin:35px auto 0;padding-top:18px;border-top:1px solid var(--line);font-size:12px;color:#766f62}
+.fwa{border-radius:0;background:#17140f;color:var(--gold2);border:1px solid rgba(212,175,55,.35);box-shadow:0 10px 35px rgba(0,0,0,.35)}
+@media(max-width:900px){.hero{min-height:620px}.category-showcase{grid-template-columns:repeat(3,1fr)}.grid{grid-template-columns:repeat(3,1fr)}.trust{grid-template-columns:repeat(2,1fr)}.footer-inner{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:720px){header{height:64px}.hero{min-height:610px;display:block}.hero:before{background:linear-gradient(180deg,rgba(9,9,9,.5),rgba(9,9,9,.88) 72%,rgba(9,9,9,.98)),url('https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1200&q=88') center/cover}.hero>div:first-child{padding:220px 22px 55px}.hero h1{font-size:54px}.hero p{font-size:16px}.perks{height:auto;padding:15px 10px;display:grid;grid-template-columns:1fr 1fr}.perks span{padding:5px 10px;text-align:center;font-size:12px}.perks span+span{border-inline-start:0}.section-head{padding-top:55px;display:block}.section-head h2{font-size:38px}.section-head p{margin-top:10px}.category-showcase{grid-template-columns:repeat(2,1fr);padding-inline:16px}.category-tile{min-height:155px}.collection-banner{margin:45px 16px 0;min-height:420px;padding:28px}.collection-banner h2{font-size:52px}.grid{grid-template-columns:repeat(2,1fr);gap:10px}main{padding-inline:16px}.trust{margin-inline:16px;padding-inline:0;grid-template-columns:1fr 1fr}.trust-card{padding:20px 14px}.newsletter{padding:55px 18px}.newsletter h2{font-size:42px}.newsletter form{display:grid}.footer-inner{grid-template-columns:1fr 1fr;gap:24px}.footer-inner>div:first-child{grid-column:1/-1}.tools{display:grid}.tools select{width:100%}}
+@media(max-width:430px){.footer-inner{grid-template-columns:1fr}.category-showcase{gap:8px}.category-tile{min-height:145px}.hero h1{font-size:48px}}
+
+</style>
+
+<style id="velora-v4-css">
+/* VELORA UPGRADE PACK v4 */
+:root{
+  --v4-gold:#d4af37; --v4-gold2:#f1d77a; --v4-dark:#090909;
+  --v4-card:#141414; --v4-line:rgba(212,175,55,.18);
+}
+.v4-wrap{max-width:1200px;margin:0 auto;padding:28px 18px}
+.v4-title{font-family:"Cormorant Garamond",serif;font-size:34px;margin:0 0 6px;color:var(--ink)}
+.v4-sub{color:var(--muted);margin:0 0 20px}
+.v4-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.v4-stat{background:linear-gradient(145deg,#171717,#0f0f0f);border:1px solid var(--v4-line);border-radius:18px;padding:18px;min-height:110px}
+.v4-stat small{color:var(--muted);display:block;margin-bottom:10px}
+.v4-stat strong{font-size:26px;color:var(--ink)}
+.v4-panel{background:#111;border:1px solid var(--v4-line);border-radius:20px;padding:20px;margin-top:18px}
+.v4-actions{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}
+.v4-btn{border:1px solid var(--v4-line);background:#171717;color:var(--ink);border-radius:999px;padding:10px 16px;cursor:pointer}
+.v4-btn.primary{background:var(--v4-gold);color:#111;border-color:var(--v4-gold)}
+.v4-input,.v4-select{width:100%;background:#0c0c0c;color:var(--ink);border:1px solid #2b2b2b;border-radius:12px;padding:11px;box-sizing:border-box}
+.v4-form{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.v4-form .full{grid-column:1/-1}
+.v4-table-wrap{overflow:auto;border-radius:14px}
+.v4-table{width:100%;border-collapse:collapse;min-width:720px}
+.v4-table th,.v4-table td{padding:12px;border-bottom:1px solid #252525;text-align:right;white-space:nowrap}
+.v4-table th{color:var(--v4-gold2);font-weight:600}
+.v4-badge{display:inline-block;border-radius:999px;padding:5px 9px;font-size:12px}
+.v4-ok{background:rgba(72,180,120,.13);color:#8fe0b5}.v4-warn{background:rgba(212,175,55,.13);color:#efd982}.v4-danger{background:rgba(220,80,80,.13);color:#ff9b9b}
+.v4-campaign{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:center}
+.v4-campaign-copy h2{font-family:"Cormorant Garamond",serif;font-size:44px;margin:0 0 8px}
+.v4-campaign-media{min-height:240px;border-radius:20px;background:radial-gradient(circle at 30% 30%,rgba(212,175,55,.35),transparent 35%),linear-gradient(135deg,#1b1b1b,#080808);border:1px solid var(--v4-line);display:grid;place-items:center;font-size:54px}
+.v4-toast{position:fixed;bottom:22px;right:22px;z-index:99999;background:#171717;color:var(--ink);border:1px solid var(--v4-line);padding:13px 17px;border-radius:12px;box-shadow:0 15px 50px #000;opacity:0;transform:translateY(10px);transition:.25s}
+.v4-toast.on{opacity:1;transform:none}
+.v4-review{padding:16px;border:1px solid #252525;border-radius:16px;background:#111}
+.v4-review strong{display:block;margin-bottom:6px}
+.v4-recs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.v4-rec{border:1px solid #242424;border-radius:16px;padding:14px;background:#111}
+.v4-rec .v4-ph{height:130px;border-radius:12px;background:linear-gradient(145deg,#202020,#0c0c0c);display:grid;place-items:center;font-size:42px;margin-bottom:10px}
+.v4-switch{display:flex;align-items:center;gap:8px}
+.v4-switch input{accent-color:var(--v4-gold)}
+@media(max-width:900px){
+  .v4-grid{grid-template-columns:repeat(2,1fr)}
+  .v4-recs{grid-template-columns:repeat(2,1fr)}
+  .v4-campaign{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .v4-wrap{padding:22px 12px}
+  .v4-title{font-size:29px}
+  .v4-grid{grid-template-columns:1fr 1fr;gap:9px}
+  .v4-stat{padding:14px;min-height:92px}
+  .v4-stat strong{font-size:21px}
+  .v4-form{grid-template-columns:1fr}
+  .v4-form .full{grid-column:auto}
+  .v4-recs{grid-template-columns:1fr 1fr;gap:9px}
+  .v4-campaign-copy h2{font-size:36px}
+  .v4-btn{padding:9px 12px}
+}
+</style>
+
+</head>
+<body>
+<header>
+  <span class="logo">VELORA</span>
+  <nav><a href="#shop">المنتجات</a><a href="#faq">الأسئلة والسياسات</a></nav>
+  <div style="display:flex;gap:8px"><button class="cartbtn" id="adm" title="فتح لوحة الإدارة" hidden>لوحة التحكم</button><button class="cartbtn" id="acct">دخول</button><button class="cartbtn" id="openCart" aria-label="فتح السلة">السلة <b id="count">0</b></button></div>
+</header>
+
+<section class="hero">
+  <div>
+    <div class="eyebrow">VELORA · WOMEN'S ACCESSORIES</div>
+    <h1>Elegance in<br>Every Detail.</h1>
+    <p>قطع مختارة بعناية تضيف اللمسة الأخيرة لإطلالتك — من القطع اليومية إلى التفاصيل التي تستحق أن تُلفت الأنظار.</p>
+    <a class="cta" href="#shop">اكتشفي المجموعة</a>
+  </div>
+  <div aria-hidden="true"></div>
+</section>
+<div class="perks"><span>شحن مجاني فوق 1,500 ج.م</span><span>الدفع عند الاستلام</span><span>استبدال خلال 14 يوم</span></div>
+
+<section class="section-head">
+  <div><div class="eyebrow">SHOP BY CATEGORY</div><h2>اختاري تفاصيلك</h2></div>
+  <p>تصفحي مجموعات VELORA حسب القطعة اللي بتكمّل ستايلك.</p>
+</section>
+<div class="category-showcase">
+  <a class="category-tile" href="#shop" style="--tile-bg:url('https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=82')"><span><b>خواتم</b><small>RINGS</small></span></a>
+  <a class="category-tile" href="#shop" style="--tile-bg:url('https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=700&q=82')"><span><b>حلقان</b><small>EARRINGS</small></span></a>
+  <a class="category-tile" href="#shop" style="--tile-bg:url('https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=700&q=82')"><span><b>سلاسل</b><small>NECKLACES</small></span></a>
+  <a class="category-tile" href="#shop" style="--tile-bg:url('https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=700&q=82')"><span><b>أساور</b><small>BRACELETS</small></span></a>
+  <a class="category-tile" href="#shop" style="--tile-bg:url('https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=700&q=82')"><span><b>ساعات</b><small>WATCHES</small></span></a>
+  <a class="category-tile" href="#shop" style="--tile-bg:url('https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=700&q=82')"><span><b>شنط</b><small>BAGS</small></span></a>
+</div>
+
+<section class="collection-banner">
+  <div><div class="eyebrow">THE GOLD EDIT</div><h2>تفاصيل<br>تُرى.</h2><p>مجموعة مختارة من القطع ذات الحضور الهادئ — فخامة بدون مبالغة.</p><a class="outline-btn" href="#shop">تسوّقي الـ Gold Edit</a></div>
+</section>
+
+<section class="section-head" id="new-arrivals">
+  <div><div class="eyebrow">NEW ARRIVALS</div><h2>وصل حديثًا</h2></div>
+  <p>أحدث القطع المضافة للمتجر — اكتشفيها قبل ما تختفي.</p>
+</section>
+
+<main id="shop">
+  <div class="tools"><input id="q" type="search" placeholder="ابحثي بالاسم" aria-label="بحث"><select id="sort" aria-label="ترتيب"><option value="">الترتيب الافتراضي</option><option value="low">الأرخص أولًا</option><option value="high">الأغلى أولًا</option><option value="new">الأحدث</option><option value="best">الأكثر مبيعًا</option></select></div>
+  <div class="cats" id="cats" role="group" aria-label="الأقسام"></div>
+  <div class="grid" id="grid"></div><div class="empty" id="none" hidden>مفيش منتجات مطابقة. جرّبي كلمة تانية أو قسم تاني.</div>
+</main>
+
+<section class="trust">
+  <div class="trust-card"><div class="icon">✦</div><h3>اختيارات بعناية</h3><p>قطع منتقاة لتناسب الستايل اليومي والمناسبات.</p></div>
+  <div class="trust-card"><div class="icon">◇</div><h3>تغليف أنيق</h3><p>تجربة استلام تليق بتفاصيل VELORA.</p></div>
+  <div class="trust-card"><div class="icon">↝</div><h3>شحن لكل المحافظات</h3><p>خيارات شحن واضحة مع تأكيد الطلب.</p></div>
+  <div class="trust-card"><div class="icon">♡</div><h3>خدمة بعد البيع</h3><p>استبدال خلال 14 يوم حسب سياسة المتجر.</p></div>
+</section>
+<section class="newsletter">
+  <div class="eyebrow">VELORA NOTES</div>
+  <h2>خليكي قريبة من الجديد.</h2>
+  <p>عروض، وصولات جديدة، ومجموعات VELORA قبل أي حد.</p>
+  <form onsubmit="event.preventDefault();this.reset();toast('تم التسجيل بنجاح ✦')"><input type="email" placeholder="البريد الإلكتروني" required><button type="submit">اشتراك</button></form>
+</section>
+
+<section id="faq"><h2>الأسئلة الشائعة وسياسة الاستبدال</h2>
+<details><summary>سياسة الاستبدال والاسترجاع</summary><p>تقدري تستبدلي أو ترجعي القطعة خلال 14 يوم من الاستلام بشرط تكون بحالتها الأصلية وفي علبتها.</p></details>
+<details><summary>مصاريف الشحن</summary><p>القاهرة والجيزة 50 ج.م، باقي المحافظات 70 ج.م، الصعيد 90 ج.م. والشحن مجاني للطلبات فوق 1,500 ج.م.</p></details>
+<details><summary>طريقة الدفع</summary><p>الدفع عند الاستلام، وبنأكد الطلب معاكي على واتساب.</p></details>
+<details><summary>إزاي أحافظ على الإكسسوار؟</summary><p>ابعديه عن المية والعطور، واحفظيه في علبته بعد الاستخدام.</p></details>
+<details><summary>إزاي أعرف مقاس الخاتم؟</summary><p>افتحي صفحة أي خاتم هتلاقي جدول المقاسات.</p></details></section>
+<footer id="about">
+  <div class="footer-inner">
+    <div><span class="logo">VELORA</span><p style="color:var(--muted);max-width:320px;margin:0">Elegance in Every Detail ♡<br>إكسسوارات حريمي مختارة بعناية.</p></div>
+    <div><h4>المتجر</h4><a href="#shop">كل المنتجات</a><a href="#new-arrivals">وصل حديثًا</a><a href="#shop">الأكثر مبيعًا</a></div>
+    <div><h4>مساعدة</h4><a href="#faq">الاستبدال والاسترجاع</a><a href="#faq">الشحن والدفع</a><a href="#faq">مقاسات الخواتم</a></div>
+    <div><h4>تواصلي معنا</h4><a href="https://wa.me/201001256867" target="_blank" rel="noopener">واتساب</a><a href="#">Instagram</a><a href="#">TikTok</a></div>
+  </div>
+  <div class="footer-note">VELORA · القاهرة، مصر · جميع الأسعار بالجنيه المصري</div>
+</footer>
+
+<div class="dim" id="dim"></div>
+<aside id="drawer" aria-label="سلة التسوق">
+  <h2><span id="dTitle">سلة التسوق</span><button id="closeCart" aria-label="إغلاق">✕</button></h2>
+  <div id="dBody" style="display:flex;flex-direction:column;flex:1;min-height:0"></div>
+</aside>
+<div class="pm" id="pm" role="dialog" aria-modal="true"></div>
+<a class="fwa" target="_blank" rel="noopener" href="https://wa.me/201001256867?text=%D8%A3%D9%87%D9%84%D9%8B%D8%A7%20VELORA%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%D8%A9%20%D8%A3%D8%B3%D8%A3%D9%84%20%D9%82%D8%A8%D9%84%20%D8%A7%D9%84%D8%B4%D8%B1%D8%A7%D8%A1">💬 واتساب</a>
+<div class="toast" id="toast"></div>
+
+<script>
+const PRODUCTS=[
+{id:1,n:"خاتم لؤلؤ ناعم",c:"خواتم",p:450,o:600,e:"💍",g:["#f3d9e4","#e8c2d4"]},
+{id:2,n:"خاتم ذهبي مرصّع",c:"خواتم",p:720,e:"💍",g:["#f6e6c4","#e9cf94"]},
+{id:3,n:"حلق دائري ذهبي",c:"حلقان",p:380,e:"✨",g:["#f6e6c4","#ecd7a6"]},
+{id:4,n:"حلق لؤلؤ متدلّي",c:"حلقان",p:520,o:650,e:"🦪",g:["#e8dff2","#d5c6e6"]},
+{id:5,n:"حلق فراشة",c:"حلقان",p:310,e:"🦋",g:["#d9ebf3","#bcd9e8"]},
+{id:6,n:"سلسلة قلب رفيعة",c:"سلاسل",p:590,e:"🤍",g:["#f3d9e4","#ebc7d8"]},
+{id:7,n:"سلسلة حرف اسمك",c:"سلاسل",p:650,e:"🔤",g:["#f6e6c4","#e9cf94"]},
+{id:8,n:"عقد طبقات",c:"سلاسل",p:880,o:1100,e:"📿",g:["#e8dff2","#d5c6e6"]},
+{id:9,n:"إسورة ستانلس مفتوحة",c:"أساور",p:420,e:"⭕",g:["#e4e4ea","#cfcfd9"]},
+{id:10,n:"إسورة خرز ملوّن",c:"أساور",p:260,e:"🧿",g:["#d6ece4","#bcdccf"]},
+{id:11,n:"طقم أساور ناعمة",c:"أساور",p:690,e:"🌟",g:["#f6e6c4","#ecd7a6"]},
+{id:12,n:"ساعة نسائية رفيعة",c:"ساعات",p:1450,o:1800,e:"⌚",g:["#e4e4ea","#cfcfd9"]},
+{id:13,n:"ساعة ذهبي وردي",c:"ساعات",p:1650,e:"⌚",g:["#f3d9e4","#e8c2d4"]},
+{id:14,n:"شنطة كتف صغيرة",c:"شنط",p:1250,e:"👜",g:["#e8dff2","#d5c6e6"]},
+{id:15,n:"كلتش سهرة",c:"شنط",p:980,o:1200,e:"👛",g:["#f3d9e4","#ebc7d8"]},
+{id:16,n:"توكة شعر ساتان",c:"إكسسوارات شعر",p:120,e:"🎀",g:["#f3d9e4","#ebc7d8"]},
+{id:17,n:"طقم ربّاطات شعر",c:"إكسسوارات شعر",p:90,e:"🌸",g:["#d6ece4","#bcdccf"]},
+{id:18,n:"أسـتـيـك كلاسيك",c:"إكسسوارات شعر",p:150,e:"🪮",g:["#f6e6c4","#ecd7a6"]}
+];
+const FREE_FROM=1500,SHIP=60,WA="201001256867";
+const SIZES={"خواتم":["15","16","17","18","19"],"أساور":["S","M","L"],"سلاسل":["40 سم","45 سم","50 سم"]};
+const $=s=>document.querySelector(s);
+const fmt=n=>n.toLocaleString("ar-EG")+" ج.م";
+let cart={},cat="الكل";
+try{cart=JSON.parse(localStorage.getItem("velora-cart")||"{}")||{}}catch(e){cart={}}
+const save=()=>{try{localStorage.setItem("velora-cart",JSON.stringify(cart))}catch(e){}};
+const cats=["الكل","♥ المفضلة",...new Set(PRODUCTS.map(p=>p.c))];
+let fav={};try{fav=JSON.parse(localStorage.getItem("velora-fav")||"{}")||{}}catch(e){}
+const STOCK={5:0,13:0,2:3,15:2},stock=p=>p.st!=null?p.st:p.id in STOCK?STOCK[p.id]:10;
+const sold=p=>(p.id*37)%90+10,rating=p=>(4+((p.id*7)%10)/10).toFixed(1);
+const MATS=["ستانلس ستيل","فضة 925","مطلي ذهب"],MAT={"شنط":"جلد صناعي مبطّن","إكسسوارات شعر":"ساتان وقماش","ساعات":"ستانلس ستيل"};
+const mat=p=>MAT[p.c]||MATS[p.id%3];
+const REV=[["منى","القطعة أحلى من الصور وجتني بسرعة."],["هدى","الخامة ممتازة ومش بتغيّر لونها."],["سارة","تغليف شيك وتعامل محترم."],["نورهان","المقاس مضبوط وهشتري تاني."]];
+const SORTS={low:(a,b)=>a.p-b.p,high:(a,b)=>b.p-a.p,new:(a,b)=>b.id-a.id,best:(a,b)=>sold(b)-sold(a)};
+const rate=g=>["القاهرة","الجيزة"].includes(g)?50:["الفيوم","بني سويف","المنيا","أسيوط","سوهاج","قنا","الأقصر","أسوان","الوادي الجديد"].includes(g)?90:70;
+const have=id=>Object.entries(cart).filter(([k])=>k.split("|")[0]==id).reduce((a,[,v])=>a+v,0);
+const AUTH={u:"velora-admin",s:"0834c5875a3b7eb8",h:"9c99e04da803bcc3e901b45b0db10e4405dd22337b2fb5b60952d4322f059bab"};
+function sha256js(t){const b=new TextEncoder().encode(t),K=[],H=[0x6a09e667,0xbb67ae85,0x3c6ef372,0xa54ff53a,0x510e527f,0x9b05688c,0x1f83d9ab,0x5be0cd19];for(let n=2,c=0;c<64;n++){let p=1;for(let d=2;d*d<=n;d++)if(n%d==0){p=0;break}if(p){K[c++]=(Math.cbrt(n)%1*4294967296)|0}}const l=b.length,w=new Uint8Array(((l+9+63)>>6)<<6);w.set(b);w[l]=128;const v=new DataView(w.buffer);v.setUint32(w.length-4,l*8>>>0);v.setUint32(w.length-8,Math.floor(l*8/4294967296));const rr=(x,n)=>(x>>>n)|(x<<(32-n));for(let o=0;o<w.length;o+=64){const W=new Array(64);for(let k=0;k<16;k++)W[k]=v.getUint32(o+k*4);for(let k=16;k<64;k++){const a=W[k-15],c=W[k-2];W[k]=(W[k-16]+(rr(a,7)^rr(a,18)^(a>>>3))+W[k-7]+(rr(c,17)^rr(c,19)^(c>>>10)))|0}let[a,c,d,e,f,g,h,i]=H;for(let k=0;k<64;k++){const t1=(i+(rr(f,6)^rr(f,11)^rr(f,25))+((f&g)^(~f&h))+K[k]+W[k])|0,t2=((rr(a,2)^rr(a,13)^rr(a,22))+((a&c)^(a&d)^(c&d)))|0;i=h;h=g;g=f;f=(e+t1)|0;e=d;d=c;c=a;a=(t1+t2)|0}[a,c,d,e,f,g,h,i].forEach((x,k)=>H[k]=(H[k]+x)|0)}return H.map(x=>(x>>>0).toString(16).padStart(8,"0")).join("")}
+const sha=async t=>{try{if(window.crypto&&crypto.subtle)return[...new Uint8Array(await crypto.subtle.digest("SHA-256",new TextEncoder().encode(t)))].map(x=>x.toString(16).padStart(2,"0")).join("")}catch(e){}return sha256js(t)};
+let me=null;try{me=JSON.parse(sessionStorage.getItem("velora-me"))}catch(e){}
+const SEED=/*S*/{}/*E*/;
+const STORE_KEY="velora-store-v3";
+let OV=Object.assign({e:{},a:[]},JSON.parse(JSON.stringify(SEED)));
+try{
+  const saved=JSON.parse(localStorage.getItem(STORE_KEY)||"null");
+  if(saved&&typeof saved==="object"){
+    OV.e=Object.assign({},OV.e||{},saved.e||{});
+    const adds=[...(OV.a||[]),...(Array.isArray(saved.a)?saved.a:[])];
+    const byId=new Map(); adds.forEach(x=>byId.set(String(x.id),x)); OV.a=[...byId.values()];
+  }
+}catch(e){}
+PRODUCTS.forEach(p=>Object.assign(p,OV.e[p.id]||{}));
+OV.a.forEach(p=>{const old=PRODUCTS.find(x=>String(x.id)===String(p.id));if(old)Object.assign(old,p);else PRODUCTS.push(p)});
+const SRC="<!DOCTYPE html>\n"+document.documentElement.outerHTML;
+const saveOv=()=>{try{localStorage.setItem(STORE_KEY,JSON.stringify({e:OV.e,a:OV.a,updatedAt:Date.now()}))}catch(e){toast("تم التعديل لكن مساحة الحفظ في المتصفح ممتلئة");}};
+const EM={"خواتم":"💍","حلقان":"✨","سلاسل":"📿","أساور":"⭕","ساعات":"⌚","شنط":"👜","إكسسوارات شعر":"🎀"};
+let edId=0,curV=[],curI=0;
+const IO="IntersectionObserver"in window&&!matchMedia("(prefers-reduced-motion: reduce)").matches;
+if(IO)document.documentElement.classList.add("rv");
+const io=IO?new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}}),{threshold:.1,rootMargin:"0px 0px -4% 0px"}):null;
+function reveal(){if(!io)return;document.querySelectorAll("#grid .card").forEach((c,i)=>{c.style.setProperty("--d",(i%4)*80+"ms");io.observe(c)})}
+const sizesOf=p=>{const x=p.sz!==undefined?p.sz:SIZES[p.c];return x&&x.length?x:null};
+const pv=p=>p.img&&p.img.length?`<img src="${p.img[0]}" alt="" loading="lazy">`:`<span class="em">${p.e}</span>`;
+const setF=(p,f,v)=>{p[f]=v;if(p.id<=100)(OV.e[p.id]=OV.e[p.id]||{})[f]=v};
+const delF=(p,f)=>{delete p[f];if(p.id<=100&&OV.e[p.id])delete OV.e[p.id][f]};
+const isAdm=()=>me&&me.role==="admin";
+function renderAcct(){$("#acct").textContent=me?"خروج":"دخول";$("#adm").hidden=!isAdm()}
+function setMe(){try{sessionStorage.setItem("velora-me",JSON.stringify(me))}catch(e){}renderAcct()}
+function showPm(h){$("#pm").innerHTML=`<button class="x" id="closeP" aria-label="إغلاق">✕</button>`+h;$("#pm").classList.add("on");$("#dim").classList.add("on")}
+const users=()=>{try{return JSON.parse(localStorage.getItem("velora-users")||"{}")}catch(e){return{}}};
+function publishAll(){if(!isAdm())return;const d=JSON.stringify({e:OV.e,a:OV.a}).replace(/</g,"\\u003c");const html=SRC.replace(/\/\*S\*\/[\s\S]*?\/\*E\*\//,()=>"/*S*/"+d+"/*E*/");const u=URL.createObjectURL(new Blob([html],{type:"text/html"})),a=document.createElement("a");a.href=u;a.download="index.html";document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),5000);toast("تم تنزيل نسخة المتجر المحدّثة — ارفعيها على الاستضافة")}
+function openLogin(reg){showPm(reg?`<form id="rf" style="margin-top:20px"><h3 style="margin:0">إنشاء حساب</h3><input id="rn" placeholder="الاسم" required><input id="rp" placeholder="رقم الموبايل" inputmode="tel" required><input id="ru" placeholder="اسم المستخدم" autocomplete="username" required><input id="rw" type="password" minlength="6" placeholder="كلمة المرور (6 أحرف على الأقل)" autocomplete="new-password" required><button class="go">إنشاء الحساب</button><button type="button" id="tolog" style="color:var(--muted)">عندي حساب</button></form>`:`<form id="lf" style="margin-top:20px"><h3 style="margin:0">تسجيل الدخول</h3><input id="lu" placeholder="اسم المستخدم" autocomplete="username" required><input id="lp" type="password" placeholder="كلمة المرور" autocomplete="current-password" required><button class="go">دخول</button><button type="button" id="toreg" style="color:var(--muted)">إنشاء حساب جديد</button></form>`)}
+function openLoginOld(){showPm(`<div class="pg" style="margin-top:20px"><form id="cf"><h3 style="margin:0">دخول العميلة</h3><small>اختياري — بيسهّل إتمام الطلب</small><input id="cn" placeholder="الاسم" required><input id="cp" placeholder="رقم الموبايل" inputmode="tel" required><button class="go">دخول</button></form><form id="lf"><h3 style="margin:0">دخول الإدارة</h3><small>لأصحاب المتجر فقط</small><input id="lu" placeholder="اسم المستخدم" autocomplete="username" required><input id="lp" type="password" placeholder="كلمة المرور" autocomplete="current-password" required><button class="go">دخول</button></form></div>`)}
+function adminPanel(){if(!isAdm())return;showPm(`<h2 style="margin:0 0 6px">لوحة التحكم</h2><p style="color:var(--muted);margin:0 0 10px;font-size:14px">عدّلي أي منتج ثم اضغطي «حفظ التعديلات». التعديل يُحفظ داخل المتصفح فورًا ويظل موجودًا بعد إغلاق المتجر وفتحه مرة أخرى.</p><div style="overflow:auto"><table><tr><th>المنتج</th><th>السعر</th><th>الكمية</th><th>إخفاء</th><th>صور / مقاسات</th></tr>${PRODUCTS.map(p=>`<tr><td><input data-f="n" data-id="${p.id}" value="${p.n}"></td><td><input type="number" min="0" data-f="p" data-id="${p.id}" value="${p.p}"></td><td><input type="number" min="0" data-f="st" data-id="${p.id}" value="${stock(p)}"></td><td><input type="checkbox" data-f="hide" data-id="${p.id}"${p.hide?" checked":""}></td><td><div style="display:flex;gap:6px;align-items:center"><span class="ath">${pv(p)}</span><button type="button" class="mini" data-edit="${p.id}">تعديل المنتج</button></div></td></tr>`).join("")}</table></div><h3>إضافة منتج</h3><form id="af" class="af"><input id="an" placeholder="الاسم" required><select id="ac">${Object.keys(EM).map(c=>`<option>${c}</option>`).join("")}</select><input id="ap" type="number" min="0" placeholder="السعر" required><input id="as" type="number" min="0" placeholder="الكمية" required><button class="go" style="grid-column:1/-1">إضافة</button></form><div class="admin-savebar"><button class="go" id="pub">تنزيل نسخة المتجر المحدّثة</button><button type="button" class="mini" id="closeAdmin">إغلاق</button></div>`)}
+function productEditor(id){if(!isAdm())return;edId=id;const p=PRODUCTS.find(x=>x.id==id);if(!p)return;const im=p.img||[],sz=sizesOf(p)||[];
+showPm(`<h2 style="margin:0">تعديل المنتج</h2><small style="color:var(--muted)">${p.c}</small>
+<div class="editor-grid">
+<label>اسم المنتج<input id="en" value="${String(p.n).replace(/"/g,'&quot;')}"></label>
+<label>السعر<input id="ep" type="number" min="0" value="${p.p}"></label>
+<label>الكمية<input id="est" type="number" min="0" value="${stock(p)}"></label>
+<label>القسم<select id="ec">${Object.keys(EM).map(c=>`<option ${c===p.c?"selected":""}>${c}</option>`).join("")}</select></label>
+<label class="wide">المقاسات<input id="szi" value="${sz.join("، ")}" placeholder="مثال: 15، 16، 17"></label>
+<label class="wide" style="display:flex;align-items:center;gap:8px"><input id="ehide" type="checkbox" ${p.hide?"checked":""} style="width:auto"> إخفاء المنتج من المتجر</label>
+</div>
+<small style="color:var(--muted)">التعديلات على البيانات تُحفظ عند الضغط على الزر الذهبي. الصور تُحفظ تلقائيًا بعد رفعها أو حذفها.</small>
+<h3 style="margin:16px 0 0">الصور <small>(${im.length.toLocaleString("ar-EG")}/٥) — الصورة الأولى هي الرئيسية</small></h3>
+<div class="ed">${im.map((u,i)=>`<div class="im"><img src="${u}" alt=""><button type="button" class="d" data-imdel="${i}" aria-label="حذف الصورة">✕</button>${i?`<button type="button" class="f" data-imfirst="${i}" aria-label="اجعليها الرئيسية">★</button>`:""}</div>`).join("")}</div>
+${im.length<5?`<input type="file" id="imf" data-id="${p.id}" accept="image/*" multiple>`:`<small>وصلتِ للحد الأقصى (٥ صور). احذفي صورة لإضافة غيرها.</small>`}
+<div class="editor-actions" style="display:flex;gap:8px;margin-top:16px;flex-wrap:wrap">
+<button class="go save-product" type="button" id="saveProduct">💾 حفظ التعديلات</button>
+${p.sz!==undefined?`<button type="button" class="mini" data-szreset="${p.id}">استخدام مقاسات القسم</button>`:""}
+<button class="mini" type="button" id="admback">رجوع للوحة التحكم</button></div>`)}
+function saveProductEditor(){if(!isAdm())return;const p=PRODUCTS.find(x=>x.id==edId);if(!p)return;const oldId=p.id;const n=$("#en").value.trim();if(!n){toast("اكتبي اسم المنتج");return}p.n=n;p.p=Math.max(0,+$("#ep").value||0);p.st=Math.max(0,+$("#est").value||0);p.c=$("#ec").value;p.e=EM[p.c];p.hide=$("#ehide").checked;const raw=$("#szi").value.trim();if(raw){p.sz=[...new Set(raw.split(/[,،]/).map(x=>x.replace(/\|/g,"").trim()).filter(Boolean))]}else if(p.sz!==undefined){p.sz=[]}if(p.id<=100)(OV.e[p.id]=OV.e[p.id]||{}),Object.assign(OV.e[p.id],{n:p.n,p:p.p,st:p.st,c:p.c,e:p.e,hide:p.hide,...(p.sz!==undefined?{sz:p.sz}:{})});else{const a=OV.a.find(x=>x.id===oldId);if(a)Object.assign(a,p)}saveOv();renderCats();renderGrid();toast("تم حفظ التعديلات — المنتج سيظل موجودًا بعد فتح المتجر مرة أخرى");productEditor(oldId)}
+function shrink(f){return new Promise((ok,no)=>{const u=URL.createObjectURL(f),i=new Image();i.onload=()=>{const r=Math.min(1,800/Math.max(i.width,i.height)),c=document.createElement("canvas");c.width=Math.round(i.width*r);c.height=Math.round(i.height*r);const x=c.getContext("2d");x.fillStyle="#fff";x.fillRect(0,0,c.width,c.height);x.drawImage(i,0,0,c.width,c.height);URL.revokeObjectURL(u);ok(c.toDataURL("image/jpeg",.78))};i.onerror=()=>{URL.revokeObjectURL(u);no()};i.src=u})}
+async function addImgs(t){if(!isAdm())return;const p=PRODUCTS.find(x=>x.id==t.dataset.id),cur=(p.img||[]).slice(),files=[...t.files].slice(0,5-cur.length);if(!files.length)return;toast("جاري رفع الصور...");for(const f of files){try{cur.push(await shrink(f))}catch(e){toast("تعذّر قراءة إحدى الصور")}}setF(p,"img",cur);renderGrid();productEditor(p.id)}
+function addProd(){const c=$("#ac").value,p={id:101+OV.a.length,n:$("#an").value.trim(),c,p:+$("#ap").value,e:EM[c],g:["#2b2413","#100d06"],st:+$("#as").value||0};OV.a.push(p);PRODUCTS.push(p);saveOv();renderGrid();productEditor(p.id);toast("تمت الإضافة — ضيفي الصور والمقاسات")}
+
+function renderCats(){
+  const bs=$("#cats").children;
+  if(bs.length===cats.length)[...bs].forEach(x=>x.setAttribute("aria-pressed",x.dataset.c===cat));
+  else $("#cats").innerHTML=cats.map(c=>`<button aria-pressed="${c===cat}" data-c="${c}">${c}</button>`).join("");
+}
+function renderGrid(){
+  const qv=$("#q").value.trim(),list=PRODUCTS.filter(p=>(cat==="الكل"||(cat==="♥ المفضلة"?fav[p.id]:p.c===cat))&&!p.hide&&p.n.includes(qv)).sort(SORTS[$("#sort").value]||(()=>0));$("#none").hidden=list.length>0;
+  $("#grid").innerHTML=list.map(p=>`<article class="card"><div class="pw"><div class="pic" data-p="${p.id}">${pv(p)}</div>${stock(p)<1?`<span class="tag oos">نفدت الكمية</span>`:p.o?`<span class="tag">خصم ${Math.round((1-p.p/p.o)*100)}٪</span>`:""}<button class="fav" data-fav="${p.id}" aria-label="المفضلة">${fav[p.id]?"♥":"♡"}</button></div>
+  <div class="info"><small>${p.c}</small><h3><button class="lk" data-p="${p.id}">${p.n}</button></h3><div class="stars">★ ${rating(p)}</div><div class="price">${fmt(p.p)}${p.o?`<s>${fmt(p.o)}</s>`:""}</div>${sizesOf(p)?`<select class="sz" id="sz${p.id}" aria-label="المقاس"><option value="">اختاري المقاس</option>${sizesOf(p).map(s=>`<option>${s}</option>`).join("")}</select>`:""}<button class="add" data-add="${p.id}"${stock(p)<1?" disabled":""}>${stock(p)<1?"نفدت الكمية":"أضيفي للسلة"}</button></div></article>`).join("");
+  reveal();
+}
+const lines=()=>Object.entries(cart).map(([k,q])=>{const[id,s]=k.split("|");return{k,s,p:PRODUCTS.find(x=>x.id==id),q}}).filter(l=>l.p);
+function totals(gv){
+  const sub=lines().reduce((s,l)=>s+l.p.p*l.q,0);
+  const ship=sub===0?0:(sub>=FREE_FROM?0:(gv?rate(gv):null));
+  return{sub,ship,total:sub+(ship||0)};
+}
+function renderCart(){
+  const L=lines(),t=totals();
+  $("#count").textContent=L.reduce((s,l)=>s+l.q,0).toLocaleString("ar-EG");
+  $("#dTitle").textContent="سلة التسوق";
+  if(!L.length){$("#dBody").innerHTML=`<div class="empty">السلة فاضية. اختاري قطعة من المنتجات وأضيفيها هنا.</div>`;return}
+  $("#dBody").innerHTML=`<div class="items">${L.map(l=>`<div class="row"><div class="t" style="background:linear-gradient(145deg,${l.p.g[0]},${l.p.g[1]})">${pv(l.p)}</div>
+  <div class="n">${l.p.n}${l.s?` <small>(المقاس: ${l.s})</small>`:""}<br><small>${fmt(l.p.p)}</small></div>
+  <div class="qty"><button data-q="${l.k}" data-d="-1" aria-label="تقليل">−</button><span>${l.q.toLocaleString("ar-EG")}</span><button data-q="${l.k}" data-d="1" aria-label="زيادة">+</button></div></div>`).join("")}</div>
+  <div class="sum"><div><span>المجموع</span><span>${fmt(t.sub)}</span></div>
+  <div><span>الشحن</span><span>${t.ship===null?"حسب المحافظة":t.ship?fmt(t.ship):"مجاني"}</span></div>
+  ${t.sub<FREE_FROM?`<small style="color:var(--muted)">أضيفي ${fmt(FREE_FROM-t.sub)} للحصول على شحن مجاني</small>`:""}
+  <div class="tot"><span>الإجمالي</span><span>${fmt(t.total)}</span></div></div>
+  <button class="go" id="checkout">إتمام الطلب</button>`;
+}
+function checkoutForm(){
+  const t=totals();
+  $("#dTitle").textContent="بيانات التوصيل";
+  $("#dBody").innerHTML=`<form id="f" style="overflow:auto">
+  <div><label for="nm">الاسم بالكامل</label><input id="nm" required autocomplete="name" value="${me&&me.role==="customer"?me.name:""}"></div>
+  <div><label for="ph">رقم الموبايل</label><input id="ph" required inputmode="tel" pattern="01[0-9]{9}" placeholder="01XXXXXXXXX" autocomplete="tel" value="${me&&me.role==="customer"?me.ph:""}"></div>
+  <div><label for="gv">المحافظة</label><select id="gv" required><option value="">اختاري المحافظة</option>${["القاهرة","الجيزة","الإسكندرية","القليوبية","الشرقية","الدقهلية","الغربية","المنوفية","البحيرة","الإسماعيلية","بورسعيد","السويس","الفيوم","بني سويف","المنيا","أسيوط","سوهاج","قنا","الأقصر","أسوان","دمياط","كفر الشيخ","مطروح","البحر الأحمر","شمال سيناء","جنوب سيناء","الوادي الجديد","بني سويف"].filter((v,i,a)=>a.indexOf(v)===i).map(g=>`<option>${g}</option>`).join("")}</select></div>
+  <div><label for="ad">العنوان بالتفصيل</label><textarea id="ad" rows="2" required autocomplete="street-address"></textarea></div>
+  <p style="margin:0;color:var(--muted);font-size:14px">الدفع عند الاستلام · الشحن <b id="shp" style="color:var(--ink)">يتحدد بالمحافظة</b> · الإجمالي <b id="ttl" style="color:var(--ink)">${fmt(t.sub)}</b></p>
+  <button class="go" type="submit">تأكيد وإرسال الفاتورة على واتساب</button>
+  <button type="button" id="back" style="color:var(--muted)">رجوع للسلة</button></form>`;
+}
+function done(c){
+  const L=lines(),t=totals(c.gv),no="VL-"+Date.now().toString().slice(-6);
+  const n=x=>x.toLocaleString("en-US")+" ج.م";
+  const msg=["✦ V E L O R A ✦","إكسسوارات حريمي","🧾 فاتورة طلب","رقم الفاتورة: "+no,"التاريخ: "+new Date().toLocaleDateString("en-GB"),"━━━━━━━━━━","👤 العميل: "+c.name,"📞 رقم التليفون: "+c.ph,"📍 المحافظة: "+c.gv,"🏠 العنوان: "+c.ad,"━━━━━━━━━━","🛍️ المنتجات:",
+    ...L.map((l,i)=>(i+1)+") "+l.p.n+(l.s?" | المقاس: "+l.s:"")+" | الكمية: "+l.q+" | السعر: "+n(l.p.p)+" | الإجمالي: "+n(l.p.p*l.q)),
+    "━━━━━━━━━━","المجموع: "+n(t.sub),"الشحن: "+(t.ship?n(t.ship):"مجاني"),"💰 الإجمالي المطلوب: "+n(t.total),"طريقة الدفع: عند الاستلام"].join("\n");
+  const link="https://wa.me/"+WA+"?text="+encodeURIComponent(msg);
+  cart={};save();renderCart();
+  try{window.open(link,"_blank","noopener")}catch(e){}
+  $("#dTitle").textContent="الفاتورة جاهزة";
+  $("#dBody").innerHTML=`<div class="ok"><div class="big">🧾</div><h3>شكرًا يا ${c.name.split(" ")[0]}</h3><p>رقم فاتورتك <b>${no}</b><br>اضغطي الزر لإرسالها على واتساب المتجر وتأكيد الطلب. لو ما فتحش تلقائي، استخدمي الزر.</p><a class="go wa" href="${link}" target="_blank" rel="noopener">إرسال الفاتورة على واتساب</a><button class="go" id="again" style="background:none;border:1px solid var(--line);color:var(--ink)">متابعة التسوق</button></div>`;
+}
+let tt;function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("on");clearTimeout(tt);tt=setTimeout(()=>t.classList.remove("on"),1600)}
+function addCart(id,s){const p=PRODUCTS.find(x=>x.id==id);if(have(id)>=stock(p)){toast(stock(p)<1?"نفدت الكمية":"وصلتِ للحد الأقصى المتاح");return false}const k=s?id+"|"+s:id;cart[k]=(cart[k]||0)+1;save();renderCart();toast("تمت الإضافة للسلة");return true}
+function closeP(){$("#pm").classList.remove("on");if(!$("#drawer").classList.contains("on"))$("#dim").classList.remove("on")}
+function openP(id){
+  const p=PRODUCTS.find(x=>x.id==id),st=stock(p),sz=sizesOf(p),V=p.img&&p.img.length?p.img.map(u=>`<img src="${u}" alt="">`):[p.e];curV=V;curI=0;
+  const ask="https://wa.me/"+WA+"?text="+encodeURIComponent("أهلاً VELORA، عايزة أسأل عن: "+p.n);
+  $("#pm").innerHTML=`<button class="x" id="closeP" aria-label="إغلاق">✕</button><div class="pg"><div><div class="gal"><div class="pic big" id="mp">${V[0]}</div>${V.length>1?`<button type="button" class="gn gp" data-g="-1" aria-label="السابق">›</button><button type="button" class="gn gx" data-g="1" aria-label="التالي">‹</button>`:""}</div>${V.length>1?`<div class="th">${V.map((v,i)=>`<button type="button" data-v="${i}" class="${i?"":"on"}" aria-label="صورة ${i+1}">${v}</button>`).join("")}</div>`:""}</div>
+  <div><small>${p.c}</small><h2 style="margin:0">${p.n}</h2><div class="stars">★ ${rating(p)} · ${sold(p)} طلب</div><div class="price">${fmt(p.p)}${p.o?`<s>${fmt(p.o)}</s>`:""}</div>
+  <p>${p.n} من VELORA، تصميم أنيق وخفيف للاستخدام اليومي والمناسبات.</p><ul><li>الخامة: ${mat(p)}</li><li>${st<1?"نفدت الكمية":st<=3?"متبقي "+st+" قطع فقط":"متوفر"}</li></ul>
+  ${sz?`<select class="sz" id="msz" aria-label="المقاس"><option value="">اختاري المقاس</option>${sz.map(s=>`<option>${s}</option>`).join("")}</select>`:""}
+  <button class="go" data-madd="${id}"${st<1?" disabled":""}>${st<1?"نفدت الكمية":"أضيفي للسلة"}</button><a class="go wa" style="background:none;border:1px solid var(--line);color:var(--ink)" href="${ask}" target="_blank" rel="noopener">اسألي عن المنتج على واتساب</a></div></div>
+  ${p.c==="خواتم"&&p.sz===undefined?`<p style="margin:14px 0 0">جدول مقاسات الخواتم (تقريبي)</p><table><tr><th>المقاس</th><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr><tr><th>المحيط (مم)</th><td>47</td><td>50</td><td>53</td><td>57</td><td>60</td></tr></table>`:""}
+  <h3>تقييمات العميلات</h3>${[0,1,2].map(i=>{const r=REV[(id+i)%4];return`<div class="rv"><b>${r[0]}</b> <span class="stars">${"★".repeat(5-(id+i)%2)}</span><p>${r[1]}</p></div>`}).join("")}`;
+  $("#pm").classList.add("on");$("#dim").classList.add("on");
+}
+function showG(i){const n=curV.length;if(n<2)return;curI=(i+n)%n;$("#mp").innerHTML=curV[curI];document.querySelectorAll(".th button").forEach((x,k)=>x.classList.toggle("on",k===curI))}
+let tx=null;document.addEventListener("touchstart",e=>{tx=e.target.closest(".gal")?e.touches[0].clientX:null},{passive:true});document.addEventListener("touchend",e=>{if(tx===null)return;const d=e.changedTouches[0].clientX-tx;tx=null;if(Math.abs(d)>40)showG(curI+(d<0?1:-1))},{passive:true});
+function open(v){$("#drawer").classList.toggle("on",v);$("#dim").classList.toggle("on",v);if(v)renderCart()}
+
+document.addEventListener("click",e=>{
+  const pe=e.target.closest("[data-p]");if(pe){openP(+pe.dataset.p);return}const b=e.target.closest("button");if(!b)return;
+  if(b.dataset.c){cat=b.dataset.c;renderCats();renderGrid()}
+  else if(b.dataset.add){const id=b.dataset.add,sel=$("#sz"+id),s=sel?sel.value:"";if(sel&&!s){toast("اختاري المقاس أولًا");return}if(addCart(id,s)&&sel)sel.value=""}
+  else if(b.dataset.madd){const id=b.dataset.madd,sel=$("#msz"),s=sel?sel.value:"";if(sel&&!s){toast("اختاري المقاس أولًا");return}if(addCart(id,s))closeP()}
+  else if(b.dataset.fav){const id=b.dataset.fav;if(fav[id])delete fav[id];else fav[id]=1;try{localStorage.setItem("velora-fav",JSON.stringify(fav))}catch(e){}renderGrid()}
+  else if(b.dataset.v){showG(+b.dataset.v)}
+  else if(b.dataset.g){showG(curI+ +b.dataset.g)}
+  else if(b.dataset.edit){if(isAdm())productEditor(+b.dataset.edit)}
+  else if(b.dataset.imdel!==undefined||b.dataset.imfirst!==undefined){if(!isAdm())return;const p=PRODUCTS.find(x=>x.id==edId),a=(p.img||[]).slice();if(b.dataset.imdel!==undefined)a.splice(+b.dataset.imdel,1);else a.unshift(...a.splice(+b.dataset.imfirst,1));if(a.length)setF(p,"img",a);else delF(p,"img");renderGrid();productEditor(edId)}
+  else if(b.dataset.szreset){if(!isAdm())return;delF(PRODUCTS.find(x=>x.id==edId),"sz");renderGrid();productEditor(edId)}
+  else if(b.id==="admback")adminPanel();
+  else if(b.id==="saveProduct")saveProductEditor();
+  else if(b.id==="closeAdmin")closeP();
+  else if(b.id==="closeP")closeP();
+  else if(b.id==="acct"){if(me){me=null;try{sessionStorage.removeItem("velora-me")}catch(e){}renderAcct();closeP();toast("تم تسجيل الخروج")}else openLogin()}
+  else if(b.id==="adm")adminPanel();
+  else if(b.id==="pub"){if(isAdm())publishAll()}
+  else if(b.id==="toreg")openLogin(true);
+  else if(b.id==="tolog")openLogin();
+  
+  else if(b.dataset.q){const k=b.dataset.q,d=Number(b.dataset.d),pid=k.split("|")[0];if(d>0&&have(pid)>=stock(PRODUCTS.find(x=>x.id==pid))){toast("وصلتِ للحد الأقصى المتاح");return}cart[k]=(cart[k]||0)+d;if(cart[k]<=0)delete cart[k];save();renderCart()}
+  else if(b.id==="openCart")open(true);
+  else if(b.id==="closeCart"||b.id==="again")open(false);
+  else if(b.id==="checkout")checkoutForm();
+  else if(b.id==="back")renderCart();
+});
+$("#dim").onclick=()=>{open(false);closeP()};
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){open(false);closeP()}});
+document.addEventListener("submit",async e=>{e.preventDefault();try{await onSubmit(e)}catch(err){console.error(err);toast("حصلت مشكلة، حاولي تاني")}});
+async function onSubmit(e){const id=e.target.id;
+  if(id==="f")done({name:$("#nm").value.trim(),ph:$("#ph").value.trim(),gv:$("#gv").value,ad:$("#ad").value.trim()});
+  else if(id==="cf"){me={role:"customer",name:$("#cn").value.trim(),ph:$("#cp").value.trim()};setMe();closeP();toast("أهلًا "+me.name)}
+  else if(id==="lf"){const u=$("#lu").value.trim().toLowerCase(),pw=$("#lp").value;if(u===AUTH.u&&await sha(AUTH.s+pw)===AUTH.h){me={role:"admin",name:"admin"};setMe();adminPanel()}else{const U=users()[u];if(U&&U.h===await sha(u+pw)){me={role:"customer",name:U.n,ph:U.p};setMe();closeP();toast("أهلًا "+U.n)}else toast("بيانات الدخول غير صحيحة")}}
+  else if(id==="rf"){const u=$("#ru").value.trim().toLowerCase(),us=users();if(u===AUTH.u||us[u]){toast("اسم المستخدم مستخدم بالفعل");return}us[u]={n:$("#rn").value.trim(),p:$("#rp").value.trim(),h:await sha(u+$("#rw").value)};try{localStorage.setItem("velora-users",JSON.stringify(us))}catch(e){}me={role:"customer",name:us[u].n,ph:us[u].p};setMe();closeP();toast("تم إنشاء حسابك")}
+  else if(id==="af")addProd()}
+$("#q").oninput=renderGrid;renderAcct();$("#sort").onchange=renderGrid;
+document.addEventListener("change",e=>{const t=e.target,f=t.dataset.f;if(t.id==="imf"){addImgs(t);return}if(f==="sz"){if(!isAdm())return;const p=PRODUCTS.find(x=>x.id==t.dataset.id);setF(p,"sz",[...new Set(t.value.split(/[,،]/).map(x=>x.replace(/\|/g,"").trim()).filter(Boolean))]);renderGrid();toast("تم حفظ المقاسات");return}if(f){if(!isAdm())return;const p=PRODUCTS.find(x=>x.id==t.dataset.id);p[f]=f==="hide"?t.checked:f==="n"?t.value.trim():Math.max(0,+t.value||0);if(p.id<=100)(OV.e[p.id]=OV.e[p.id]||{})[f]=p[f];saveOv();renderGrid();return}if(e.target.id==="gv"){const t=totals(e.target.value);$("#shp").textContent=t.ship?fmt(t.ship):"مجاني";$("#ttl").textContent=fmt(t.total)}});
+renderCats();renderGrid();renderCart();
+</script>
+
+<!-- VELORA UPGRADE PACK v4 -->
+<section id="veloraV4" class="v4-wrap" hidden aria-hidden="true">
+  <div class="v4-panel">
+    <h2 class="v4-title">VELORA — لوحة الإدارة الجديدة ✨</h2>
+    <p class="v4-sub">إدارة المخزون، العروض، الأرباح، التقييمات، البحث الذكي، الحملات، الإشعارات وواتساب في مكان واحد.</p>
+    <div class="v4-actions">
+      <button class="v4-btn primary" onclick="v4OpenDashboard()">📊 لوحة المبيعات</button>
+      <button class="v4-btn" onclick="v4OpenInventory()">📦 المخزون</button>
+      <button class="v4-btn" onclick="v4OpenCoupons()">🎁 الكوبونات</button>
+      <button class="v4-btn" onclick="v4OpenCampaigns()">📣 الحملات</button>
+    </div>
+  </div>
+
+  <div class="v4-panel" id="v4Dashboard">
+    <h2 class="v4-title">Dashboard</h2>
+    <p class="v4-sub">ملخص سريع للمبيعات والمخزون والربحية.</p>
+    <div class="v4-grid">
+      <div class="v4-stat"><small>مبيعات اليوم</small><strong id="v4Sales">0 ج.م</strong></div>
+      <div class="v4-stat"><small>عدد الطلبات</small><strong id="v4Orders">0</strong></div>
+      <div class="v4-stat"><small>القطع المباعة</small><strong id="v4Units">0</strong></div>
+      <div class="v4-stat"><small>صافي الربح</small><strong id="v4Profit">0 ج.م</strong></div>
+    </div>
+    <div class="v4-panel" style="margin-top:14px">
+      <b>أفضل المنتجات</b>
+      <div id="v4Best" style="margin-top:12px"></div>
+    </div>
+  </div>
+
+  <div class="v4-panel" id="v4Inventory">
+    <h2 class="v4-title">📦 المخزون</h2>
+    <div class="v4-actions">
+      <input class="v4-input" id="v4InvSearch" placeholder="ابحثي عن منتج..." oninput="v4RenderInventory()">
+      <button class="v4-btn" onclick="v4ExportInventory()">تصدير المخزون</button>
+    </div>
+    <div class="v4-table-wrap"><table class="v4-table"><thead><tr><th>المنتج</th><th>القسم</th><th>المخزون</th><th>الحالة</th><th>تكلفة</th><th>سعر البيع</th><th>الربح</th></tr></thead><tbody id="v4InvBody"></tbody></table></div>
+  </div>
+
+  <div class="v4-panel" id="v4Coupons">
+    <h2 class="v4-title">🎁 كوبونات الخصم</h2>
+    <div class="v4-form">
+      <input class="v4-input" id="v4CouponCode" placeholder="كود الكوبون مثل GOLD15">
+      <input class="v4-input" id="v4CouponValue" type="number" placeholder="قيمة الخصم %">
+      <input class="v4-input" id="v4CouponMin" type="number" placeholder="الحد الأدنى للطلب">
+      <input class="v4-input" id="v4CouponEnd" type="date">
+    </div>
+    <div class="v4-actions"><button class="v4-btn primary" onclick="v4AddCoupon()">حفظ الكوبون</button></div>
+    <div id="v4CouponList"></div>
+  </div>
+
+  <div class="v4-panel" id="v4Campaigns">
+    <div class="v4-campaign">
+      <div class="v4-campaign-copy">
+        <small style="color:var(--v4-gold2)">VELORA CAMPAIGN</small>
+        <h2 id="v4CampTitle">THE GOLD EDIT</h2>
+        <p id="v4CampText" class="v4-sub">اكتشفي القطع الجديدة المختارة بعناية.</p>
+        <button class="v4-btn primary" onclick="v4EditCampaign()">تعديل الحملة</button>
+      </div>
+      <div class="v4-campaign-media">✦ VELORA ✦</div>
+    </div>
+  </div>
+
+  <div class="v4-panel">
+    <h2 class="v4-title">🔎 البحث الذكي</h2>
+    <p class="v4-sub">ابحثي بالاسم أو القسم أو الوصف أو الكلمات المرتبطة بالمنتج.</p>
+    <input class="v4-input" id="v4SmartSearch" placeholder="مثال: خاتم ذهبي / شنطة / أساور" oninput="v4SmartSearch()">
+    <div id="v4SearchResults" class="v4-recs" style="margin-top:14px"></div>
+  </div>
+
+  <div class="v4-panel">
+    <h2 class="v4-title">✨ منتجات مقترحة</h2>
+    <p class="v4-sub">اقتراحات تلقائية بناءً على القسم والسعر.</p>
+    <div id="v4Recommendations" class="v4-recs"></div>
+  </div>
+
+  <div class="v4-panel">
+    <h2 class="v4-title">⭐ تقييمات العملاء</h2>
+    <div id="v4Reviews" class="v4-grid"></div>
+  </div>
+
+  <div class="v4-panel">
+    <h2 class="v4-title">📣 محرر الصفحة الرئيسية والحملات</h2>
+    <div class="v4-form">
+      <input class="v4-input" id="v4HeroTitle" placeholder="عنوان Hero">
+      <input class="v4-input" id="v4HeroButton" placeholder="نص الزر">
+      <input class="v4-input full" id="v4HeroText" placeholder="وصف Hero">
+    </div>
+    <div class="v4-actions">
+      <button class="v4-btn primary" onclick="v4SaveHomepage()">حفظ الصفحة الرئيسية</button>
+      <button class="v4-btn" onclick="v4ResetHomepage()">استرجاع الافتراضي</button>
+    </div>
+  </div>
+
+  <div class="v4-panel">
+    <h2 class="v4-title">🔔 الإشعارات و WhatsApp</h2>
+    <div class="v4-form">
+      <label class="v4-switch"><input type="checkbox" id="v4NotifyOrder" checked> إشعار عند إنشاء طلب</label>
+      <label class="v4-switch"><input type="checkbox" id="v4NotifyStock" checked> تنبيه عند انخفاض المخزون</label>
+      <label class="v4-switch"><input type="checkbox" id="v4NotifyCampaign" checked> إشعارات الحملات</label>
+      <label class="v4-switch"><input type="checkbox" id="v4WhatsApp" checked> إرسال تحديثات الطلب على WhatsApp</label>
+    </div>
+    <div class="v4-actions">
+      <button class="v4-btn primary" onclick="v4SaveSettings()">حفظ الإعدادات</button>
+      <button class="v4-btn" onclick="v4TestWhatsApp()">اختبار WhatsApp</button>
+    </div>
+    <p class="v4-sub">رقم WhatsApp الحالي في المتجر يُستخدم للإرسال، ويمكن ربطه لاحقًا بـ WhatsApp Business API للأتمتة الكاملة.</p>
+  </div>
+</section>
+<div id="v4Toast" class="v4-toast"></div>
+
+
+<script id="velora-v5-admin-guard">
+(function(){
+  function isVeloraAdmin(){
+    try{
+      const m = JSON.parse(sessionStorage.getItem("velora-me") || "null");
+      return !!(m && m.role === "admin");
+    }catch(e){ return false; }
+  }
+  function applyAdminOnly(){
+    const box = document.getElementById("veloraV4");
+    if(!box) return;
+    const ok = isVeloraAdmin();
+    box.hidden = !ok;
+    box.setAttribute("aria-hidden", ok ? "false" : "true");
+  }
+  window.veloraV4AdminOnly = applyAdminOnly;
+  if(document.readyState === "loading"){
+    document.addEventListener("DOMContentLoaded", applyAdminOnly);
+  }else{
+    applyAdminOnly();
+  }
+  window.addEventListener("storage", applyAdminOnly);
+})();
+</script>
+
+
+<style>
+/* ===== VELORA V6 ===== */
+.v6-wrap{display:none;margin:28px auto;max-width:1180px;padding:0 16px}
+.v6-wrap.on{display:block}
+.v6-panel{background:linear-gradient(145deg,#111 0%,#191919 100%);border:1px solid #3b2b10;border-radius:24px;padding:22px;box-shadow:0 20px 60px #0008;color:#f8f1df}
+.v6-head{display:flex;gap:14px;justify-content:space-between;align-items:flex-start;flex-wrap:wrap}
+.v6-title{margin:0;color:#d9b86c;font-size:26px}
+.v6-sub{margin:7px 0 0;color:#bbb}
+.v6-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}
+.v6-tab,.v6-btn{border:1px solid #5b4520;background:#191919;color:#f4ead5;border-radius:12px;padding:10px 14px;cursor:pointer}
+.v6-tab.active,.v6-btn.gold{background:#c7a55b;color:#17120a;border-color:#d9b86c;font-weight:800}
+.v6-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.v6-card{background:#151515;border:1px solid #302819;border-radius:18px;padding:16px}
+.v6-card small{color:#999}.v6-card strong{display:block;font-size:24px;margin-top:7px;color:#d9b86c}
+.v6-section{display:none}.v6-section.on{display:block}
+.v6-form{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
+.v6-field{display:flex;flex-direction:column;gap:6px}.v6-field.full{grid-column:1/-1}
+.v6-field label{font-size:13px;color:#aaa}.v6-field input,.v6-field select,.v6-field textarea{background:#0e0e0e;color:#fff;border:1px solid #3b3222;border-radius:10px;padding:11px}
+.v6-table{width:100%;border-collapse:collapse;margin-top:15px}.v6-table th,.v6-table td{padding:10px;border-bottom:1px solid #2b261e;text-align:right;font-size:13px}
+.v6-pill{display:inline-block;padding:5px 9px;border-radius:99px;background:#2a2111;color:#e2bf6c}
+.v6-list{display:grid;gap:8px;margin-top:14px}.v6-row{display:flex;justify-content:space-between;gap:10px;padding:12px;background:#101010;border-radius:12px}
+.v6-note{background:#211a0e;border:1px solid #5b4520;padding:12px;border-radius:12px;margin-top:12px;color:#d9c28f}
+.v6-hide{display:none!important}
+@media(max-width:800px){.v6-grid{grid-template-columns:repeat(2,1fr)}.v6-form{grid-template-columns:1fr}.v6-field.full{grid-column:auto}.v6-table{font-size:11px}}
+@media(max-width:520px){.v6-grid{grid-template-columns:1fr}.v6-panel{padding:15px;border-radius:18px}.v6-title{font-size:21px}}
+</style>
+
+<section id="veloraV6" class="v6-wrap" aria-hidden="true">
+ <div class="v6-panel">
+  <div class="v6-head">
+   <div><h2 class="v6-title">VELORA V6 — مركز التحكم 👑</h2><p class="v6-sub">المخزون • الأرباح • الحملات • Flash Sale • العملاء • التحليلات</p></div>
+   <div><button class="v6-btn" onclick="v6Backup()">💾 Backup</button> <button class="v6-btn" onclick="v6Reset()">↺ استعادة الإعدادات</button></div>
+  </div>
+
+  <div class="v6-tabs">
+   <button class="v6-tab active" data-v6="dash">📊 Dashboard</button>
+   <button class="v6-tab" data-v6="inventory">📦 المخزون</button>
+   <button class="v6-tab" data-v6="flash">⚡ Flash Sale</button>
+   <button class="v6-tab" data-v6="campaigns">🎯 الحملات</button>
+   <button class="v6-tab" data-v6="customers">👥 العملاء</button>
+   <button class="v6-tab" data-v6="analytics">📈 Analytics</button>
+   <button class="v6-tab" data-v6="home">🏠 الصفحة الرئيسية</button>
+  </div>
+
+  <div id="v6-dash" class="v6-section on">
+   <div class="v6-grid">
+    <div class="v6-card"><small>عدد المنتجات</small><strong id="v6-products">0</strong></div>
+    <div class="v6-card"><small>قيمة المخزون</small><strong id="v6-stock-value">0 ج</strong></div>
+    <div class="v6-card"><small>المبيعات التجريبية</small><strong id="v6-sales">0 ج</strong></div>
+    <div class="v6-card"><small>الربح التقديري</small><strong id="v6-profit">0 ج</strong></div>
+   </div>
+   <div class="v6-note">💡 البيانات الجديدة تُحفظ محليًا في هذا المتصفح. لإدارة حقيقية متعددة الأجهزة نربطها لاحقًا بقاعدة بيانات وBackend.</div>
+  </div>
+
+  <div id="v6-inventory" class="v6-section">
+   <div style="display:flex;gap:8px;flex-wrap:wrap">
+    <button class="v6-btn gold" onclick="v6ExportInventory()">📤 تصدير المخزون CSV</button>
+    <button class="v6-btn" onclick="v6RenderInventory()">↻ تحديث</button>
+   </div>
+   <table class="v6-table"><thead><tr><th>المنتج</th><th>القسم</th><th>سعر البيع</th><th>التكلفة</th><th>المخزون</th><th>الربح/قطعة</th></tr></thead><tbody id="v6-inventory-body"></tbody></table>
+  </div>
+
+  <div id="v6-flash" class="v6-section">
+   <h3>⚡ إنشاء Flash Sale</h3>
+   <div class="v6-form">
+    <div class="v6-field"><label>اسم العرض</label><input id="v6-fs-name" value="FLASH SALE ⚡"></div>
+    <div class="v6-field"><label>نسبة الخصم %</label><input id="v6-fs-discount" type="number" min="1" max="99" value="30"></div>
+    <div class="v6-field"><label>تاريخ ووقت البداية</label><input id="v6-fs-start" type="datetime-local"></div>
+    <div class="v6-field"><label>تاريخ ووقت النهاية</label><input id="v6-fs-end" type="datetime-local"></div>
+    <div class="v6-field"><label>الكمية المحدودة</label><input id="v6-fs-qty" type="number" min="1" value="50"></div>
+    <div class="v6-field"><label>المنتج</label><select id="v6-fs-product"></select></div>
+    <div class="v6-field full"><button class="v6-btn gold" onclick="v6SaveFlash()">⚡ حفظ Flash Sale</button></div>
+   </div>
+   <div id="v6-flash-list" class="v6-list"></div>
+  </div>
+
+  <div id="v6-campaigns" class="v6-section">
+   <h3>🎯 Campaign Manager</h3>
+   <div class="v6-form">
+    <div class="v6-field"><label>اسم الحملة</label><input id="v6-c-name" placeholder="Winter Collection"></div>
+    <div class="v6-field"><label>الخصم %</label><input id="v6-c-discount" type="number" min="0" max="99"></div>
+    <div class="v6-field"><label>البداية</label><input id="v6-c-start" type="datetime-local"></div>
+    <div class="v6-field"><label>النهاية</label><input id="v6-c-end" type="datetime-local"></div>
+    <div class="v6-field full"><label>وصف الحملة</label><textarea id="v6-c-desc" rows="3"></textarea></div>
+    <div class="v6-field full"><button class="v6-btn gold" onclick="v6SaveCampaign()">💾 حفظ الحملة</button></div>
+   </div>
+   <div id="v6-campaign-list" class="v6-list"></div>
+  </div>
+
+  <div id="v6-customers" class="v6-section">
+   <h3>👥 Customer CRM</h3>
+   <div class="v6-note">يمكن تطويرها لاحقًا لتشمل VIP، Loyalty Points، الطلبات، إجمالي الإنفاق، وآخر شراء. حاليًا نجهز الهيكل بدون اختلاق بيانات عملاء.</div>
+  </div>
+
+  <div id="v6-analytics" class="v6-section">
+   <h3>📈 Analytics</h3>
+   <div class="v6-grid">
+    <div class="v6-card"><small>متوسط هامش الربح</small><strong id="v6-margin">0%</strong></div>
+    <div class="v6-card"><small>منتجات منخفضة المخزون</small><strong id="v6-low-stock">0</strong></div>
+    <div class="v6-card"><small>Flash Sales نشطة</small><strong id="v6-active-flash">0</strong></div>
+    <div class="v6-card"><small>حملات محفوظة</small><strong id="v6-campaign-count">0</strong></div>
+   </div>
+  </div>
+
+  <div id="v6-home" class="v6-section">
+   <h3>🏠 Home Page Editor</h3>
+   <div class="v6-form">
+    <div class="v6-field"><label>العنوان الرئيسي</label><input id="v6-home-title" placeholder="Elegance in Every Detail"></div>
+    <div class="v6-field"><label>النص الفرعي</label><input id="v6-home-sub" placeholder="Discover VELORA"></div>
+    <div class="v6-field"><label>زر الدعوة للشراء</label><input id="v6-home-cta" placeholder="تسوقي الآن"></div>
+    <div class="v6-field"><label>رابط الصورة الرئيسية</label><input id="v6-home-img" placeholder="https://..."></div>
+    <div class="v6-field full"><button class="v6-btn gold" onclick="v6SaveHome()">💾 حفظ إعدادات الصفحة</button></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<script>
+(function(){
+ const KEY="velora-v6-data";
+ const def={inventory:{},flash:[],campaigns:[],home:{title:"Elegance in Every Detail",sub:"Discover VELORA",cta:"تسوقي الآن",img:""}};
+ let D=JSON.parse(localStorage.getItem(KEY)||"null")||def;
+ const save=()=>localStorage.setItem(KEY,JSON.stringify(D));
+ const products=()=>Array.isArray(window.VELORA_PRODUCTS)?window.VELORA_PRODUCTS:(typeof PRODUCTS!=="undefined"?PRODUCTS:[]);
+ const money=n=>new Intl.NumberFormat("ar-EG").format(Math.round(Number(n)||0))+" ج";
+ const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+ const admin=()=>{try{let m=JSON.parse(sessionStorage.getItem("velora-me")||"null");return !!m&&m.role==="admin"}catch(e){return false}};
+ function guard(){
+   const el=document.getElementById("veloraV6"); if(!el)return;
+   const ok=admin(); el.classList.toggle("on",ok); el.setAttribute("aria-hidden",String(!ok));
+   if(ok){v6Render(); setTimeout(v6Render,50)}
+ }
+ window.v6Open=()=>{guard();if(admin())document.getElementById("veloraV6").scrollIntoView({behavior:"smooth"})};
+ function v6Render(){
+   if(!admin())return;
+   const ps=products();
+   let totalStock=0,totalCost=0,totalProfit=0,margin=0,low=0;
+   ps.forEach(p=>{const x=D.inventory[p.id]||{};const qty=Number(x.qty??10);const cost=Number(x.cost??Math.round(Number(p.p||0)*.55));totalStock+=qty;totalCost+=qty*cost;totalProfit+=qty*(Number(p.p||0)-cost);if(qty<=3)low++});
+   document.getElementById("v6-products").textContent=ps.length;
+   document.getElementById("v6-stock-value").textContent=money(totalCost);
+   document.getElementById("v6-sales").textContent=money(0);
+   document.getElementById("v6-profit").textContent=money(totalProfit);
+   margin=totalCost?Math.round(totalProfit/(totalCost+totalProfit)*100):0;
+   document.getElementById("v6-margin").textContent=margin+"%";
+   document.getElementById("v6-low-stock").textContent=low;
+   document.getElementById("v6-active-flash").textContent=D.flash.filter(x=>new Date(x.end)>new Date()).length;
+   document.getElementById("v6-campaign-count").textContent=D.campaigns.length;
+   v6RenderInventory(); v6RenderFlash(); v6RenderCampaigns(); v6FillProducts();
+   ["title","sub","cta","img"].forEach(k=>{const e=document.getElementById("v6-home-"+k);if(e)e.value=D.home[k]||""});
+ }
+ window.v6RenderInventory=()=>{
+   if(!admin())return;
+   const ps=products(),b=document.getElementById("v6-inventory-body"); if(!b)return;
+   b.innerHTML=ps.map(p=>{const x=D.inventory[p.id]||{};const qty=Number(x.qty??10),cost=Number(x.cost??Math.round(Number(p.p||0)*.55));return `<tr><td>${esc(p.n)}</td><td>${esc(p.c)}</td><td>${money(p.p)}</td><td><input style="width:80px" type="number" min="0" value="${cost}" onchange="v6SetInv(${p.id},'cost',this.value)"></td><td><input style="width:70px" type="number" min="0" value="${qty}" onchange="v6SetInv(${p.id},'qty',this.value)"></td><td>${money(Number(p.p||0)-cost)}</td></tr>`}).join("");
+ };
+ window.v6SetInv=(id,k,v)=>{D.inventory[id]=D.inventory[id]||{};D.inventory[id][k]=Number(v)||0;save();v6Render()};
+ function v6FillProducts(){const s=document.getElementById("v6-fs-product");if(!s)return;s.innerHTML=products().map(p=>`<option value="${p.id}">${esc(p.n)}</option>`).join("")}
+ window.v6SaveFlash=()=>{
+   if(!admin())return;
+   const x={id:Date.now(),name:document.getElementById("v6-fs-name").value||"FLASH SALE ⚡",discount:Number(document.getElementById("v6-fs-discount").value)||0,start:document.getElementById("v6-fs-start").value,end:document.getElementById("v6-fs-end").value,qty:Number(document.getElementById("v6-fs-qty").value)||0,productId:Number(document.getElementById("v6-fs-product").value)};
+   D.flash.unshift(x);save();v6Render();alert("تم حفظ Flash Sale ⚡");
+ };
+ function v6RenderFlash(){const b=document.getElementById("v6-flash-list");if(!b)return;b.innerHTML=D.flash.map(x=>`<div class="v6-row"><span><b>${esc(x.name)}</b><br><small>${x.discount}% • ${x.qty} قطعة • حتى ${esc(x.end||"غير محدد")}</small></span><button class="v6-btn" onclick="v6DelFlash(${x.id})">حذف</button></div>`).join("")||"<div class='v6-note'>لا توجد Flash Sales محفوظة.</div>"}
+ window.v6DelFlash=id=>{D.flash=D.flash.filter(x=>x.id!==id);save();v6Render()};
+ window.v6SaveCampaign=()=>{if(!admin())return;D.campaigns.unshift({id:Date.now(),name:document.getElementById("v6-c-name").value||"حملة جديدة",discount:Number(document.getElementById("v6-c-discount").value)||0,start:document.getElementById("v6-c-start").value,end:document.getElementById("v6-c-end").value,desc:document.getElementById("v6-c-desc").value||""});save();v6Render();alert("تم حفظ الحملة 🎯")};
+ function v6RenderCampaigns(){const b=document.getElementById("v6-campaign-list");if(!b)return;b.innerHTML=D.campaigns.map(x=>`<div class="v6-row"><span><b>${esc(x.name)}</b> <span class="v6-pill">${x.discount}%</span><br><small>${esc(x.desc)} • ${esc(x.start||"")} → ${esc(x.end||"")}</small></span><button class="v6-btn" onclick="v6DelCampaign(${x.id})">حذف</button></div>`).join("")||"<div class='v6-note'>لا توجد حملات محفوظة.</div>"}
+ window.v6DelCampaign=id=>{D.campaigns=D.campaigns.filter(x=>x.id!==id);save();v6Render()};
+ window.v6SaveHome=()=>{if(!admin())return;["title","sub","cta","img"].forEach(k=>D.home[k]=document.getElementById("v6-home-"+k).value);save();alert("تم حفظ إعدادات الصفحة الرئيسية 💾")};
+ window.v6ExportInventory=()=>{if(!admin())return;const rows=[["ID","Product","Category","Sale Price","Cost","Stock","Profit Per Unit"]];products().forEach(p=>{const x=D.inventory[p.id]||{};const cost=Number(x.cost??Math.round(Number(p.p||0)*.55)),qty=Number(x.qty??10);rows.push([p.id,p.n,p.c,p.p,cost,qty,Number(p.p||0)-cost])});const csv="\\ufeff"+rows.map(r=>r.map(v=>`"${String(v??"").replace(/"/g,'""')}"`).join(",")).join("\\n");const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([csv],{type:"text/csv;charset=utf-8"}));a.download="VELORA_inventory.csv";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};
+ window.v6Backup=()=>{if(!admin())return;const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([JSON.stringify(D,null,2)],{type:"application/json"}));a.download="VELORA_V6_backup.json";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};
+ window.v6Reset=()=>{if(!admin()||!confirm("استعادة إعدادات V6 الافتراضية؟"))return;D=JSON.parse(JSON.stringify(def));save();v6Render()};
+ document.querySelectorAll(".v6-tab").forEach(btn=>btn.addEventListener("click",()=>{document.querySelectorAll(".v6-tab").forEach(x=>x.classList.remove("active"));document.querySelectorAll(".v6-section").forEach(x=>x.classList.remove("on"));btn.classList.add("active");document.getElementById("v6-"+btn.dataset.v6).classList.add("on")}));
+ window.v6Render=v6Render;
+ const oldAdm=window.veloraV4AdminOnly;
+ window.veloraV6AdminOnly=guard;
+ window.addEventListener("storage",()=>{try{D=JSON.parse(localStorage.getItem(KEY)||"null")||def;v6Render()}catch(e){}});
+ setTimeout(guard,100);
+})();
+</script>
+
+
+<!-- VELORA Signature Experience -->
+<style>
+#velora-signature-splash{
+  position:fixed;inset:0;z-index:999999;
+  display:flex;align-items:center;justify-content:center;
+  background:#0b0b0b;color:#f4ead5;
+  transition:opacity 1.15s cubic-bezier(.22,1,.36,1),visibility 1.15s;
+}
+#velora-signature-splash.vs-hide{opacity:0;visibility:hidden;pointer-events:none}
+.vs-inner{text-align:center;position:relative;padding:40px}
+.vs-mark{
+  width:72px;height:72px;margin:0 auto 28px;
+  border:1px solid rgba(205,170,91,.55);
+  border-radius:50%;display:grid;place-items:center;
+  color:#d6b66a;font-family:Georgia,serif;font-size:34px;
+  opacity:0;transform:scale(.82);
+  animation:vsMark 1.4s cubic-bezier(.22,1,.36,1) .15s forwards;
+}
+.vs-brand{
+  margin:0;color:#f7efdf;font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(38px,8vw,76px);letter-spacing:.22em;
+  font-weight:400;padding-left:.22em;
+  opacity:0;transform:translateY(14px);
+  animation:vsText 1.3s cubic-bezier(.22,1,.36,1) .55s forwards;
+}
+.vs-tag{
+  margin:16px 0 0;color:#c8bfae;
+  font-family:Arial,sans-serif;font-size:12px;
+  letter-spacing:.22em;padding-left:.22em;
+  opacity:0;transform:translateY(10px);
+  animation:vsText 1.1s cubic-bezier(.22,1,.36,1) .95s forwards;
+}
+.vs-line{
+  width:0;height:1px;background:#c9a85f;margin:26px auto 0;
+  animation:vsLine 1.1s cubic-bezier(.22,1,.36,1) 1.25s forwards;
+}
+@keyframes vsMark{to{opacity:1;transform:scale(1)}}
+@keyframes vsText{to{opacity:1;transform:translateY(0)}}
+@keyframes vsLine{to{width:54px}}
+@media(prefers-reduced-motion:reduce){
+ #velora-signature-splash,.vs-mark,.vs-brand,.vs-tag,.vs-line{animation:none!important;transition:none!important}
+ .vs-mark,.vs-brand,.vs-tag{opacity:1;transform:none}.vs-line{width:54px}
+}
+</style>
+
+<div id="velora-signature-splash" aria-label="VELORA">
+  <div class="vs-inner">
+    <div class="vs-mark">V</div>
+    <h1 class="vs-brand">VELORA</h1>
+    <p class="vs-tag">Elegance in Every Detail ♡</p>
+    <div class="vs-line"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  const splash=document.getElementById("velora-signature-splash");
+  if(!splash)return;
+
+  // Show the signature experience only on the first visit in this browser.
+  const KEY="velora-signature-seen";
+  const seen=sessionStorage.getItem(KEY);
+
+  if(seen){
+    splash.remove();
+    return;
+  }
+
+  sessionStorage.setItem(KEY,"1");
+
+  // Let the logo breathe briefly, then reveal the storefront smoothly.
+  window.addEventListener("load",function(){
+    setTimeout(function(){
+      splash.classList.add("vs-hide");
+      setTimeout(function(){splash.remove()},1250);
+    },2300);
+  });
+
+  // Fallback if load is already complete or delayed.
+  setTimeout(function(){
+    if(document.body.contains(splash) && !splash.classList.contains("vs-hide")){
+      splash.classList.add("vs-hide");
+      setTimeout(function(){splash.remove()},1250);
+    }
+  },5200);
+})();
+</script>
+
+<!-- VELORA v8: tracking, abandoned cart, photo reviews, reports, WhatsApp templates -->
+<style id="velora-v8-css">
+.v8-tl{list-style:none;margin:18px 0;padding:0;position:relative}
+.v8-tl li{position:relative;padding:0 34px 20px 0;color:var(--muted)}
+.v8-tl li:before{content:"";position:absolute;right:0;top:4px;width:14px;height:14px;border-radius:50%;border:1px solid var(--gold);background:var(--bg)}
+.v8-tl li:after{content:"";position:absolute;right:6px;top:20px;bottom:-4px;width:1px;background:var(--line)}
+.v8-tl li:last-child:after{display:none}
+.v8-tl li.d{color:var(--ink)}.v8-tl li.d:before{background:var(--gold)}.v8-tl li.c b{color:var(--gold2)}
+.v8-tl small{display:block;color:var(--muted)}
+.v8-bar{position:fixed;z-index:36;inset-inline:12px;bottom:calc(76px + env(safe-area-inset-bottom,0px));max-width:440px;margin-inline:auto;background:#17140f;border:1px solid var(--gold);padding:14px 16px;display:none;flex-direction:column;gap:10px;box-shadow:0 18px 50px #000}
+.v8-bar.on{display:flex}.v8-bar .r{display:flex;gap:8px;flex-wrap:wrap}.v8-bar .x{position:absolute;top:6px;inset-inline-end:10px;color:var(--muted)}
+.v8-b{padding:9px 14px;border:1px solid var(--line);color:var(--ink);text-decoration:none;font-size:14px;display:inline-block;background:none}.v8-b.g{background:var(--gold);color:#0c0c0c;border-color:var(--gold);font-weight:700}
+#v8rv .rvi{border-top:1px solid var(--line);padding:10px 0}#v8rv .rvi p{margin:4px 0;color:var(--muted)}
+#v8rv .vb{color:#8fe0b5;font-size:12px;margin-inline-start:6px}#v8rv .ph{width:84px;height:84px;object-fit:cover;border:1px solid var(--line);cursor:zoom-in}#v8rv .ph.z{width:100%;height:auto;cursor:zoom-out}
+#v8rv form{margin-top:10px}.v8-act{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.v8-bars{display:flex;gap:8px;align-items:end;height:120px;margin-top:14px}.v8-bars div{flex:1;text-align:center;font-size:11px;color:#aaa}.v8-bars i{display:block;background:#c7a55b;min-height:2px;margin-bottom:4px}
+.v8-ta{width:100%;min-height:80px;background:#0e0e0e;color:#fff;border:1px solid #3b3222;border-radius:10px;padding:10px;margin-top:6px}
+</style>
+<div class="v8-bar" id="v8bar" role="status"><button class="x" data-v8="abx" aria-label="إغلاق">✕</button><b>سلتك مستنياكي 🛍</b><span id="v8abs" style="color:var(--muted);font-size:14px"></span><div class="r"><button class="v8-b g" data-v8="abgo">كمّلي الطلب</button><a class="v8-b" id="v8abw" target="_blank" rel="noopener">اسألينا على واتساب</a></div></div>
+<script>
+(function(){
+const SB="https://mpdkbbpzukvvfqwpnivb.supabase.co",KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1wZGtiYnB6dWt2dmZxd3BuaXZiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQyNTcxNDMsImV4cCI6MjEwOTgzMzE0M30.8lcxid5-dwy-dkjbhu9nv0Lfmwna1X5guHPtwDZCr6s";
+const OK="velora-orders",RK="velora-reviews",TK="velora-wa-tpl",ST=["تم استلام الطلب","تم التأكيد","تم الشحن","تم التسليم"];
+const ld=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))||d}catch(e){return d}},sv=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+const nd=s=>String(s).replace(/[٠-٩]/g,d=>"٠١٢٣٤٥٦٧٨٩".indexOf(d)).trim();
+const go=u=>{const a=document.createElement("a");a.href=u;a.target="_blank";a.rel="noopener";document.body.appendChild(a);a.click();a.remove()};
+const site=()=>location.href.split("#")[0].split("?")[0],wa=(ph,t)=>"https://wa.me/"+ph+"?text="+encodeURIComponent(t);
+const intl=p=>"2"+nd(p).replace(/\D/g,""),dt=x=>new Date(+x).toLocaleDateString("ar-EG",{day:"numeric",month:"long"});
+const tlink=o=>site()+"?track="+o.no;
+/* اتصال Supabase */
+let tok=null;try{tok=JSON.parse(sessionStorage.getItem("velora-sbt"))}catch(e){}
+async function api(p,o={}){const r=await fetch(SB+p,{method:o.m||"GET",headers:Object.assign({apikey:KEY,Authorization:"Bearer "+((tok&&tok.access_token)||KEY),"Content-Type":"application/json"},o.h||{}),body:o.b?JSON.stringify(o.b):undefined});if(!r.ok)throw new Error(await r.text());const t=await r.text();return t?JSON.parse(t):null}
+const MIN={Prefer:"return=minimal"};let OR=[],RR=[];
+async function pull(){[OR,RR]=await Promise.all([api("/rest/v1/orders?select=*&order=ts.desc"),api("/rest/v1/reviews?select=*&order=ts.desc")])}
+/* 1) حفظ الطلب + تتبع */
+window.done=function(c){
+ const L=lines(),t=totals(c.gv),no="VL-"+Date.now().toString().slice(-6),ts=Date.now();
+ const rec={no,name:c.name,ph:c.ph,gv:c.gv,ad:c.ad,items:L.map(l=>({id:l.p.id,n:l.p.n,s:l.s||"",q:l.q,p:l.p.p})),sub:t.sub,ship:t.ship||0,total:t.total,st:0,ts,up:ts};
+ const o=ld(OK,[]);o.unshift(rec);sv(OK,o);
+ api("/rest/v1/orders",{m:"POST",h:MIN,b:rec}).catch(()=>{});
+ const n=x=>x.toLocaleString("en-US")+" ج.م";
+ const msg=["✦ V E L O R A ✦","إكسسوارات حريمي","🧾 فاتورة طلب","رقم الفاتورة: "+no,"التاريخ: "+new Date().toLocaleDateString("en-GB"),"━━━━━━━━━━","👤 العميل: "+c.name,"📞 رقم التليفون: "+c.ph,"📍 المحافظة: "+c.gv,"🏠 العنوان: "+c.ad,"━━━━━━━━━━","🛍️ المنتجات:",
+  ...L.map((l,i)=>(i+1)+") "+l.p.n+(l.s?" | المقاس: "+l.s:"")+" | الكمية: "+l.q+" | السعر: "+n(l.p.p)+" | الإجمالي: "+n(l.p.p*l.q)),
+  "━━━━━━━━━━","المجموع: "+n(t.sub),"الشحن: "+(t.ship?n(t.ship):"مجاني"),"💰 الإجمالي المطلوب: "+n(t.total),"طريقة الدفع: عند الاستلام"].join("\n");
+ const link="https://wa.me/"+WA+"?text="+encodeURIComponent(msg);
+ cart={};save();renderCart();
+ try{window.open(link,"_blank","noopener")}catch(e){}
+ $("#dTitle").textContent="الفاتورة جاهزة";
+ $("#dBody").innerHTML=`<div class="ok"><div class="big">🧾</div><h3>شكرًا يا ${esc(c.name.split(" ")[0])}</h3><p>رقم فاتورتك <b>${no}</b><br>اضغطي الزر لإرسالها على واتساب المتجر وتأكيد الطلب. لو ما فتحش تلقائي، استخدمي الزر.</p><a class="go wa" href="${link}" target="_blank" rel="noopener">إرسال الفاتورة على واتساب</a><button class="go" data-v8="track" data-no="${no}" style="background:none;border:1px solid var(--line);color:var(--ink)">تتبّعي طلبك</button><button class="go" id="again" style="background:none;border:1px solid var(--line);color:var(--ink)">متابعة التسوق</button></div>`;
+};
+function trackUI(r){
+ const cur=r.st,steps=cur<0?`<li class="d c"><b>تم إلغاء الطلب</b></li>`:ST.map((x,i)=>`<li class="${i<=cur?"d":""}${i==cur?" c":""}"><b>${x}</b>${i==0?`<small>${dt(r.ts)}</small>`:i==cur?`<small>${dt(r.up)}</small>`:""}</li>`).join("");
+ return `<h2 style="margin:0 0 4px">طلب ${esc(r.no)}</h2><small>أهلًا ${esc((r.name||"").split(" ")[0])} · ${esc(r.gv||"")}</small><ol class="v8-tl">${steps}</ol><a class="go wa" style="background:none;border:1px solid var(--line);color:var(--ink)" target="_blank" rel="noopener" href="${wa(WA,"أهلًا VELORA، عايزة أسأل عن طلب رقم "+r.no)}">اسألي عن طلبك على واتساب</a>`}
+function trackOpen(no){showPm(`<h2 style="margin:0 0 10px">تتبّعي طلبك</h2><form id="v8tf" style="display:grid;gap:10px"><input id="v8n" placeholder="رقم الطلب مثال: VL-123456" value="${esc(no||"")}" required><input id="v8p" inputmode="tel" placeholder="رقم الموبايل" required><button class="go">تتبّع</button></form><div id="v8tr" style="margin-top:12px"></div>`)}
+const q0=new URLSearchParams(location.search).get("track");if(q0)setTimeout(()=>trackOpen(q0),700);
+/* 4) سلة متروكة */
+let idle=Date.now(),abX=sessionStorage.getItem("velora-abx")==="1";
+["click","scroll","touchstart","keydown"].forEach(ev=>addEventListener(ev,()=>idle=Date.now(),{passive:true}));
+const bar=on=>$("#v8bar").classList.toggle("on",on);
+function abCheck(){
+ if(abX||$("#v8bar").classList.contains("on")||!lines().length||$("#drawer").classList.contains("on")||$("#pm").classList.contains("on")||Date.now()-idle<45000)return;
+ const L=lines(),t=totals();$("#v8abs").textContent=L.reduce((s,l)=>s+l.q,0)+" قطعة · "+fmt(t.sub);
+ $("#v8abw").href=wa(WA,"أهلًا VELORA، سلتي فيها:\n"+L.map(l=>"• "+l.p.n+(l.s?" ("+l.s+")":"")+" ×"+l.q).join("\n")+"\nعايزة أكمل الطلب.");bar(true)}
+setInterval(abCheck,5000);if(lines().length)setTimeout(()=>{idle=0},4000);
+/* 11) تقييمات بصور */
+const shrinkImg=f=>new Promise(r=>{const fr=new FileReader;fr.onload=()=>{const i=new Image;i.onload=()=>{const k=Math.min(1,520/Math.max(i.width,i.height)),c=document.createElement("canvas");c.width=i.width*k;c.height=i.height*k;c.getContext("2d").drawImage(i,0,0,c.width,c.height);r(c.toDataURL("image/jpeg",.72))};i.onerror=()=>r("");i.src=fr.result};fr.onerror=()=>r("");fr.readAsDataURL(f)});
+function rvDraw(pid,L,note){
+ const box=document.getElementById("v8rv");if(!box)return;
+ const own=ld(RK,[]).filter(r=>r.pid==pid&&!L.some(x=>x.id===r.id)),avg=L.length?(L.reduce((s,r)=>s+r.r,0)/L.length).toFixed(1):"";
+ const row=(r,pend)=>`<div class="rvi"><b>${esc(r.name)}</b>${r.v?`<span class="vb">✓ مشتريّة موثّقة</span>`:""} <span class="stars">${"★".repeat(r.r)}</span> <small>${dt(r.ts)}</small>${pend?`<small style="color:var(--gold)"> · بانتظار اعتماد المتجر</small>`:""}<p>${esc(r.t)}</p>${r.img?`<img class="ph" src="${r.img}" alt="صورة من العميلة" data-v8="zoom">`:""}</div>`;
+ box.innerHTML=(note?`<div class="v6-note" style="padding:10px;border:1px solid var(--gold);margin-bottom:8px">${note}</div>`:"")+(avg?`<div class="stars">★ ${avg} من ${L.length} تقييم</div>`:"")+(L.map(r=>row(r)).join("")+own.map(r=>row(r,1)).join("")||`<p style="color:var(--muted)">لسه مفيش تقييمات. كوني أول واحدة تقيّم.</p>`)+
+ `<details style="margin-top:10px"><summary>أضيفي تقييمك</summary><form id="v8rf" data-pid="${pid}"><select id="v8rs">${[5,4,3,2,1].map(n=>`<option value="${n}">${"★".repeat(n)}</option>`).join("")}</select><input id="v8rn" placeholder="الاسم" required value="${esc(me&&me.name&&me.role==="customer"?me.name:"")}"><input id="v8ro" placeholder="رقم طلبك لتوثيق التقييم (اختياري)"><textarea id="v8rt" rows="3" placeholder="رأيك في القطعة" required></textarea><label>صورة للقطعة (اختياري)<input id="v8ri" type="file" accept="image/*"></label><button class="go">إرسال التقييم</button></form></details>`}
+const op=window.openP;
+window.openP=function(id){op(id);const pm=$("#pm"),h=[...pm.querySelectorAll("h3")].find(x=>x.textContent.includes("تقييمات"));if(!h)return;pm.querySelectorAll(".rv").forEach(x=>x.remove());const b=document.createElement("div");b.id="v8rv";h.after(b);
+ api("/rest/v1/reviews?pid=eq."+id+"&ap=eq.true&select=id,pid,name,r,t,v,img,ts&order=ts.desc").then(L=>rvDraw(id,L||[])).catch(()=>rvDraw(id,[]))};
+/* لوحة التحكم */
+const TPL0={conf:"أهلًا {name} 💛\nتم تأكيد طلبك {no} من VELORA بإجمالي {total}.\nتابعي حالته من هنا: {link}",ship:"أهلًا {name} 🚚\nطلبك {no} اتشحن وفي الطريق ليكي.\nتتبّعيه من هنا: {link}",deliv:"أهلًا {name} ✨\nطلبك {no} وصل. نتمنى القطعة تعجبك!\n{link}",rev:"أهلًا {name} 💛\nيهمنا رأيك في طلبك {no}. شاركينا تقييمك وصورة القطعة لو حابة من صفحة المنتج:\n{site}"};
+const TN={conf:"تأكيد",ship:"شحن",deliv:"تسليم",rev:"طلب تقييم"},tpl=()=>Object.assign({},TPL0,ld(TK,{}));
+const fill=(t,o)=>t.replace(/{name}/g,o.name.split(" ")[0]).replace(/{no}/g,o.no).replace(/{total}/g,fmt(o.total)).replace(/{link}/g,tlink(o)).replace(/{site}/g,site());
+const sec=(id,html)=>{let e=document.getElementById("v6-"+id);if(!e){e=document.createElement("div");e.id="v6-"+id;e.className="v6-section";document.querySelector(".v6-panel").appendChild(e)}e.innerHTML=html};
+const loginBox=()=>`<h3>🔐 تسجيل دخول الإدارة</h3><div class="v6-note">ادخلي بإيميل حساب الأدمن اللي عملتيه في Supabase لعرض الطلبات والتقييمات.</div><div class="v6-form"><div class="v6-field"><label>الإيميل</label><input id="v8e" type="email" autocomplete="username"></div><div class="v6-field"><label>كلمة المرور</label><input id="v8w" type="password" autocomplete="current-password"></div><div class="v6-field full"><button class="v6-btn gold" data-v8="sbin">دخول</button></div></div>`;
+const tools=`<button class="v6-btn" data-v8="pull" style="margin-bottom:10px">↻ تحديث</button>`;
+function oRender(){
+ if(!tok)return sec("orders",loginBox());const T=tpl();
+ sec("orders",`<h3>🧾 الطلبات ورسائل واتساب</h3>${tools}<div class="v6-list">${OR.map(o=>`<div class="v6-row" style="flex-wrap:wrap"><div><b>${o.no}</b> · ${esc(o.name)} · ${esc(o.ph)}<br><small style="color:#999">${fmt(+o.total)} · ${esc(o.gv)} · ${dt(o.ts)}</small></div><div class="v8-act"><select data-v8s="${o.no}">${ST.map((x,i)=>`<option value="${i}"${o.st===i?" selected":""}>${x}</option>`).join("")}<option value="-1"${o.st<0?" selected":""}>ملغي</option></select>${Object.keys(TN).map(k=>`<button class="v6-btn" data-v8a="${k}" data-no="${o.no}">${TN[k]}</button>`).join("")}</div></div>`).join("")||`<div class="v6-row">لا توجد طلبات بعد.</div>`}</div>
+ <h3 style="margin-top:22px">✏️ قوالب الرسائل</h3><small style="color:#999">المتغيرات: {name} {no} {total} {link} {site}</small>${Object.keys(TN).map(k=>`<label style="display:block;margin-top:10px;color:#aaa">${TN[k]}<textarea class="v8-ta" data-v8t="${k}">${esc(T[k])}</textarea></label>`).join("")}`)}
+function rRender(){
+ if(!tok)return sec("reports",loginBox());
+ const O=OR.filter(o=>o.st>=0).map(o=>({...o,total:+o.total})),now=Date.now(),D=864e5,sd=new Date().setHours(0,0,0,0),sum=a=>a.reduce((s,o)=>s+o.total,0);
+ const day=O.filter(o=>o.ts>=sd),wk=O.filter(o=>o.ts>=now-7*D),mo=O.filter(o=>o.ts>=now-30*D);
+ const bars=[...Array(7)].map((_,i)=>{const s=sd-(6-i)*D;return{l:new Date(s).toLocaleDateString("ar-EG",{weekday:"short"}),v:sum(O.filter(o=>o.ts>=s&&o.ts<s+D))}}),mx=Math.max(1,...bars.map(b=>b.v));
+ const tp={};O.forEach(o=>o.items.forEach(i=>{const t=tp[i.id]=tp[i.id]||{n:i.n,q:0,v:0};t.q+=i.q;t.v+=i.q*i.p}));
+ const top=Object.values(tp).sort((a,b)=>b.q-a.q).slice(0,5),low=PRODUCTS.filter(p=>!p.hide&&stock(p)<=3).sort((a,b)=>stock(a)-stock(b));
+ sec("reports",`<h3>📑 التقارير</h3>${tools}<div class="v6-grid"><div class="v6-card"><small>إيراد اليوم</small><strong>${fmt(sum(day))}</strong></div><div class="v6-card"><small>آخر 7 أيام</small><strong>${fmt(sum(wk))}</strong></div><div class="v6-card"><small>آخر 30 يوم</small><strong>${fmt(sum(mo))}</strong></div><div class="v6-card"><small>متوسط الطلب</small><strong>${fmt(O.length?sum(O)/O.length:0)}</strong></div></div>
+ <div class="v8-bars">${bars.map(b=>`<div><i style="height:${Math.round(b.v/mx*90)}px"></i>${b.l}</div>`).join("")}</div>
+ <h3 style="margin-top:22px">🏆 الأكثر مبيعًا</h3><div class="v6-list">${top.map(t=>`<div class="v6-row"><span>${esc(t.n)}</span><span>${t.q} قطعة · ${fmt(t.v)}</span></div>`).join("")||`<div class="v6-row">لا بيانات بعد.</div>`}</div>
+ <h3 style="margin-top:22px">⚠️ مخزون منخفض</h3><div class="v6-list">${low.map(p=>`<div class="v6-row"><span>${esc(p.n)}</span><span class="v6-pill">${stock(p)<1?"نفد":"متبقي "+stock(p)}</span></div>`).join("")||`<div class="v6-row">كل المنتجات متوفرة بكمية كافية.</div>`}</div>`)}
+function vRender(){
+ if(!tok)return sec("reviews",loginBox());
+ sec("reviews",`<h3>⭐ التقييمات</h3>${tools}<div class="v6-note">التقييم يظهر للعملاء بعد «اعتماد».</div><div class="v6-list">${RR.map(r=>{const p=PRODUCTS.find(x=>x.id==r.pid);return`<div class="v6-row" style="flex-wrap:wrap"><div>${esc(p?p.n:"")} · <b>${esc(r.name)}</b> ${"★".repeat(r.r)}${r.v?" ✓":""}<br><small style="color:#999">${esc(r.t)}</small>${r.img?`<br><img src="${r.img}" style="width:60px;height:60px;object-fit:cover">`:""}</div><div class="v8-act"><button class="v6-btn${r.ap?"":" gold"}" data-v8="rvap" data-id="${r.id}">${r.ap?"إلغاء الاعتماد":"اعتماد"}</button><button class="v6-btn" data-v8="rvdel" data-id="${r.id}">حذف</button></div></div>`}).join("")||`<div class="v6-row">لا توجد تقييمات بعد.</div>`}</div>`)}
+const VIEWS={orders:oRender,reports:rRender,reviews:vRender};
+async function refresh(f){if(tok){try{await pull()}catch(e){tok=null;sessionStorage.removeItem("velora-sbt");toast("انتهت الجلسة، سجّلي الدخول")}}f()}
+function addTabs(){
+ const tabs=document.querySelector(".v6-tabs");if(!tabs||tabs.dataset.v8)return;tabs.dataset.v8=1;
+ [["orders","🧾 الطلبات والرسائل"],["reports","📑 التقارير"],["reviews","⭐ التقييمات"]].forEach(([k,t])=>{
+  const b=document.createElement("button");b.className="v6-tab";b.dataset.v6=k;b.textContent=t;tabs.appendChild(b);VIEWS[k]();
+  b.addEventListener("click",()=>{document.querySelectorAll(".v6-tab").forEach(x=>x.classList.remove("active"));document.querySelectorAll(".v6-section").forEach(x=>x.classList.remove("on"));b.classList.add("active");document.getElementById("v6-"+k).classList.add("on");refresh(VIEWS[k])})})}
+const draw=()=>Object.values(VIEWS).forEach(f=>f());
+/* أحداث */
+document.addEventListener("click",async e=>{
+ const a=e.target.closest("[data-v8a]");
+ if(a&&isAdm()&&tok){const r=OR.find(x=>x.no===a.dataset.no),k=a.dataset.v8a,ix={conf:1,ship:2,deliv:3}[k];if(!r)return;
+  if(ix!=null&&r.st<ix){r.st=ix;r.up=Date.now();api("/rest/v1/orders?no=eq."+r.no,{m:"PATCH",h:MIN,b:{st:r.st,up:r.up}}).catch(()=>toast("تعذر تحديث الحالة"))}
+  go(wa(intl(r.ph),fill(tpl()[k],r)));oRender();return}
+ const b=e.target.closest("[data-v8]");if(!b)return;const k=b.dataset.v8;
+ if(k==="track"){e.preventDefault();trackOpen(b.dataset.no)}
+ else if(k==="abx"){abX=true;sessionStorage.setItem("velora-abx","1");bar(false)}
+ else if(k==="abgo"){bar(false);abX=true;$("#openCart").click()}
+ else if(k==="zoom")b.classList.toggle("z");
+ else if(!isAdm())return;
+ else if(k==="sbin"){try{tok=await api("/auth/v1/token?grant_type=password",{m:"POST",b:{email:$("#v8e").value.trim(),password:$("#v8w").value}});sessionStorage.setItem("velora-sbt",JSON.stringify(tok));await pull();draw();toast("تم تسجيل الدخول")}catch(x){tok=null;toast("الإيميل أو كلمة المرور غير صحيحة")}}
+ else if(k==="pull")refresh(draw);
+ else if(k==="rvap"&&tok){const r=RR.find(x=>x.id===b.dataset.id);if(r){r.ap=!r.ap;api("/rest/v1/reviews?id=eq."+r.id,{m:"PATCH",h:MIN,b:{ap:r.ap}}).catch(()=>toast("تعذر الحفظ"));vRender()}}
+ else if(k==="rvdel"&&tok&&confirm("حذف التقييم؟")){api("/rest/v1/reviews?id=eq."+b.dataset.id,{m:"DELETE",h:MIN}).then(()=>{RR=RR.filter(x=>x.id!==b.dataset.id);vRender()}).catch(()=>toast("تعذر الحذف"))}
+});
+document.addEventListener("change",e=>{
+ const s=e.target;if(!isAdm())return;
+ if(s.dataset.v8s&&tok){const r=OR.find(x=>x.no===s.dataset.v8s);if(r){r.st=+s.value;r.up=Date.now();api("/rest/v1/orders?no=eq."+r.no,{m:"PATCH",h:MIN,b:{st:r.st,up:r.up}}).then(()=>toast("تم تحديث الحالة")).catch(()=>toast("تعذر التحديث"))}}
+ else if(s.dataset.v8t){const t=ld(TK,{});t[s.dataset.v8t]=s.value;sv(TK,t);toast("تم حفظ القالب")}
+});
+document.addEventListener("submit",async e=>{
+ const f=e.target;
+ if(f.id==="v8tf"){e.preventDefault();const no=nd($("#v8n").value).toUpperCase(),ph=nd($("#v8p").value),out=$("#v8tr");out.textContent="جاري البحث…";
+  try{const r=await api("/rest/v1/rpc/track_order",{m:"POST",b:{p_no:no,p_ph:ph}});out.innerHTML=r&&r[0]?trackUI(r[0]):`<p style="color:var(--muted)">مفيش طلب بالبيانات دي. اتأكدي من الرقم والموبايل.</p><a class="go wa" target="_blank" rel="noopener" href="${wa(WA,"أهلًا VELORA، عايزة أسأل عن طلب رقم "+esc(no))}">اسألي على واتساب</a>`}
+  catch(x){out.innerHTML=`<p style="color:var(--muted)">تعذر الاتصال دلوقتي. جرّبي تاني بعد شوية.</p>`}}
+ else if(f.id==="v8rf"){e.preventDefault();const pid=+f.dataset.pid,no=nd($("#v8ro").value).toUpperCase(),ord=ld(OK,[]).find(x=>x.no.toUpperCase()===no&&x.items.some(i=>i.id==pid));
+  const file=$("#v8ri").files[0],img=file?await shrinkImg(file):"";
+  const r={id:"r"+Date.now()+Math.random().toString(36).slice(2,5),pid,name:$("#v8rn").value.trim(),r:+$("#v8rs").value,t:$("#v8rt").value.trim(),v:!!ord,img:img||null,ts:Date.now(),ap:false};
+  try{await api("/rest/v1/reviews",{m:"POST",h:MIN,b:r});const R=ld(RK,[]);R.unshift(r);sv(RK,R);
+   const L=await api("/rest/v1/reviews?pid=eq."+pid+"&ap=eq.true&select=id,pid,name,r,t,v,img,ts&order=ts.desc").catch(()=>[]);rvDraw(pid,L||[],"شكرًا ليكي 💛 تقييمك اتبعت وهيظهر بعد اعتماد المتجر.")}
+  catch(x){toast("تعذر إرسال التقييم، جرّبي تاني")}}
+});
+const tl=document.createElement("a");tl.href="#";tl.textContent="تتبّعي طلبك";tl.dataset.v8="track";
+const nav=document.querySelector("header nav");if(nav)nav.appendChild(tl.cloneNode(true));
+[...document.querySelectorAll(".footer-inner h4")].filter(h=>h.textContent.includes("مساعدة")).forEach(h=>h.parentElement.appendChild(tl));
+setInterval(()=>{if(isAdm())addTabs()},800);
+})();
+</script>
+
+</body>
+</html>
